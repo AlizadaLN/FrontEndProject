@@ -1,6 +1,7 @@
 body {
     margin: 0;
     
+    
   }
   
 .blueRow{
@@ -68,8 +69,8 @@ body {
       text-align: left;
     }} */
 
-    .row{
-        width: 110%;
+    .firstRow{
+        width: 100%;
         height: 35px;
         border-bottom: solid 0.5px lightgray;
         display: flex;
@@ -93,6 +94,111 @@ body {
 
     .input-group mb-3{
         padding-left: 200px;
+    }
+
+    .secondRow{
+        width: 100%;
+        height: 100px;
+        
+        margin-left: 100px;
+        display: flex;
+
+       
+    }
+
+    .form-inline{
+        
+        background-color: lightgrey;
+        display: flex;
+        border-radius: 5px;
+    }
+
+    .signIn i{
+        position: absolute;
+        font-size: 20px;
+        padding: 40px;
+        margin-left: -35px;
+        
+        
+        
+    }
+
+    .basketIcon{
+        position: absolute;
+        font-size: 20px;
+        padding: 25px;
+        margin-left: 1050px;
+        
+    }
+
+    .btn btn-primary{
+
+       display: flex;
+    }
+
+    .modalLocation{
+        width: 300px;
+        height: 100px;
+    }
+
+
+
+
+
+
+    
+    .div{
+        display: flex;
+        position: absolute;
+    }
+    
+    .nav-link{
+        color: black;
+    }
+    
+    .shop-item{
+        color: blue;
+        text-decoration: none;
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    i{
+        margin-right: 5px;
+    }
+    
+    .home-menu,
+    .shop-menu {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s;
+      background-color: white;
+      z-index: 1;
+      padding: 35px;
+
+    }
+    
+    .nav-item:hover .home-menu,
+    .nav-item:hover .shop-menu {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .toggle:hover {
+      background-color: rgb(225, 246, 244);
+      border-radius: 50px;
+    }
+    
+    
+    .toggle:hover .fa-chevron-down {
+      transform: rotate(180deg);
     }
 
     
