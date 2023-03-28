@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,10 +27,10 @@
                 <div class="navBar">
 
                     <div class="topnav" id="myTopnav">
-                        <a href="#home" class="active">About Us</a>
-                        <a href="#news">My Account</a>
-                        <a href="#contact">Wishlist</a>
-                        <a href="#about">Order Tracking</a>
+                        <a href="" class="active">About Us</a>
+                        <a href="">My Account</a>
+                        <a href="">Wishlist</a>
+                        <a href="">Order Tracking</a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                         </a>
@@ -94,8 +96,8 @@
 
                 <div class="basketIcon">
                     <a class="nav-link" href="./basket.html">
-                        <p>$0.00  <i class="fa-solid fa-basket-shopping"></i><sup id="basketCount">0</sup></p>
-                        
+                        <p>$0.00 <i class="fa-solid fa-basket-shopping"></i><sup id="basketCount">0</sup></p>
+
                     </a>
                 </div>
 
@@ -111,105 +113,369 @@
 
 
             </div>
-            <div class="container">
-                <ul class="nav nav-pills">
-                    <li class="nav-item home">
-                        <a class="nav-link toggle" data-bs-toggle="home" href="#" role="button"
-                            aria-expanded="false">HOME<i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="home-menu div flex-column">
-                            <li><a class="home-item" href="#">Home 1</a></li>
-                            <li><a class="home-item" href="#">Home 2</a></li>
-                            <li><a class="home-item" href="#">Home 3</a></li>
-                            <li><a class="home-item" href="#">Home 4</a></li>
-                            <li><a class="home-item" href="#">Home 5</a></li>
+        </div>
+        <div class="container">
+            <div class="MainLine">
+                <div class="btn-group">
+                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" style="border-radius: 30px; background-color: blue;">
+                        <i class="fa-solid fa-bars"></i> AllCategories
+                    </button>
+                    <ul class="dropdown-menu" style="width: 250px; padding-left: 20px;">
+                        <a href=""><i class="fa-solid fa-apple-whole"></i> Fruits and Vegetables<i
+                                class="fa-solid fa-chevron-right" style="margin-left: 20px;"></i></a>
+                        <ul>
+                            <li><a href="">1</a></li>
+                            <li><a href="">22</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">2</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item shop">
-                        <a class="nav-link toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-expanded="false">SHOP<i class="fa-solid fa-chevron-down"></i></a>
-                        <div class="div">
-                            <ul class="shop-menu">
-                                <li><a class="shop-item" href="#">Shop Lists</a></li>
-                                <ul class="shopList-menu">
-                                    <li><a class="shopLists-item" href="#">Shop Default</a></li>
-                                    <li><a class="shopLists-item" href="#">Shop Right Sidebar</a></li>
-                                    <li><a class="shopLists-item" href="#">Shop Wide</a></li>
-                                    <li><a class="shopLists-item" href="#">List Left Sidebar</a></li>
-                                    <li><a class="shopLists-item" href="#">Load More Button</a></li>
-                                    <li><a class="shopLists-item" href="#">Infinite Scrolling</a></li>
-                                </ul>
-                            </ul>
 
-                            <ul class="shop-menu">
-                                <li><a class="shop-item" href="#">Product Detail</a></li>
-                                <ul class="productDetail-menu">
-                                    <li><a class="productDetail-item" href="#">Product Default</a></li>
-                                    <li><a class="productDetail-item" href="#">Product Variable</a></li>
-                                    <li><a class="productDetail-item" href="#">Product Grouped</a></li>
-                                    <li><a class="productDetail-item" href="#">Product External</a></li>
-                                    <li><a class="productDetail-item" href="#">Product Downloadable</a></li>
-                                    <li><a class="productDetail-item" href="#">Product With Video</a></li>
-                                </ul>
-                            </ul>
 
-                            <ul class="shop-menu">
-                                <li><a class="shop-item" href="#">Product Types</a></li>
-                                <ul class="productTypes-menu">
-                                    <li><a class="productTypes-item" href="#">Single Type 1</a></li>
-                                    <li><a class="productTypes-item" href="#">Single Type 2</a></li>
-                                    <li><a class="productTypes-item" href="#">Single Type 3</a></li>
-                                    <li><a class="productTypes-item" href="#">Single Type 4</a></li>
-                                    <li><a class="productTypes-item" href="#">Thumbnails Left</a></li>
-                                    <li><a class="productTypes-item" href="#">Zoom Image</a></li>
-                                </ul>
-                            </ul>
 
-                            <ul class="shop-menu">
-                                <li><a class="shop-item" href="#">Shop Pages</a></li>
-                                <ul class="shopPages-menu">
-                                    <li><a class="shopPages-item" href="#">Cart</a></li>
-                                    <li><a class="shopPages-item" href="#">Checkout</a></li>
-                                    <li><a class="shopPages-item" href="#">My account</a></li>
-                                    <li><a class="shopPages-item" href="#">Wishlist</a></li>
-                                    <li><a class="shopPages-item" href="#">Order Tracking</a></li>
-                                    <li><a class="shopPages-item" href="#">Order on WhatsApp</a></li>
-                                </ul>
-                            </ul>
 
-                            <ul class="shop-menu">
-                                <li><a class="shop-item" href="#">Shop Layouts</a></li>
-                                <ul class="shopLayouts-menu">
-                                    <li><a class="shopLayouts-item" href="#">Two Columns</a></li>
-                                    <li><a class="shopLayouts-item" href="#">Three Columns</a></li>
-                                    <li><a class="shopLayouts-item" href="#">Three Columns Wide</a></li>
-                                    <li><a class="shopLayouts-item" href="#">Four Columns</a></li>
-                                    <li><a class="shopLayouts-item" href="#">Four Columns Wide</a></li>
-                                    <li><a class="shopLayouts-item" href="#">Five Columns wide</a></li>
-                                </ul>
+
+                        <li><a href=""> <i class="fa-solid fa-fish"></i> Meats and Seafood</a></li>
+                        <li> <a href=""> <i class="fa-solid fa-egg"></i>Breakfast and Dairy</a></li>
+                        <li> <a href=""><i class="fa-solid fa-mug-hot"></i>Beverages</a></li>
+                        <li> <a href="">Breads and Bakery</a> </li>
+                        <li><a href="">Frozen Foods</a></li>
+                        <li><a href=""> Biscuits and Snacks</a></li>
+                        <li><a href="">Grocery and Staples</a> </li>
+                        <hr>
+                        <li>Value of the day</li>
+                        <li>Top 100 offers</li>
+                        <li>New Arrivals</li>
+                    </ul>
+                </div>
+
+
+                <div class="navMenu">
+
+                    <ul class="nav nav-pills">
+                        <li class="nav-item home">
+                            <a class="nav-link toggle" data-bs-toggle="home" href="#" role="button"
+                                aria-expanded="false">HOME<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="home-menu div flex-column">
+                                <li><a class="home-item" href="#">Home 1</a></li>
+                                <li><a class="home-item" href="#">Home 2</a></li>
+                                <li><a class="home-item" href="#">Home 3</a></li>
+                                <li><a class="home-item" href="#">Home 4</a></li>
+                                <li><a class="home-item" href="#">Home 5</a></li>
                             </ul>
+                        </li>
+                        <li class="nav-item shop">
+                            <a class="nav-link toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="div">
+                                <ul class="shop-menu">
+                                    <li><a class="shop-item" href="#">Shop Lists</a></li>
+                                    <ul class="shopList-menu">
+                                        <li><a class="shopLists-item" href="#">Shop Default</a></li>
+                                        <li><a class="shopLists-item" href="#">Shop Right Sidebar</a></li>
+                                        <li><a class="shopLists-item" href="#">Shop Wide</a></li>
+                                        <li><a class="shopLists-item" href="#">List Left Sidebar</a></li>
+                                        <li><a class="shopLists-item" href="#">Load More Button</a></li>
+                                        <li><a class="shopLists-item" href="#">Infinite Scrolling</a></li>
+                                    </ul>
+                                </ul>
+
+                                <ul class="shop-menu">
+                                    <li><a class="shop-item" href="#">Product Detail</a></li>
+                                    <ul class="productDetail-menu">
+                                        <li><a class="productDetail-item" href="#">Product Default</a></li>
+                                        <li><a class="productDetail-item" href="#">Product Variable</a></li>
+                                        <li><a class="productDetail-item" href="#">Product Grouped</a></li>
+                                        <li><a class="productDetail-item" href="#">Product External</a></li>
+                                        <li><a class="productDetail-item" href="#">Product Downloadable</a></li>
+                                        <li><a class="productDetail-item" href="#">Product With Video</a></li>
+                                    </ul>
+                                </ul>
+
+                                <ul class="shop-menu">
+                                    <li><a class="shop-item" href="#">Product Types</a></li>
+                                    <ul class="productTypes-menu">
+                                        <li><a class="productTypes-item" href="#">Single Type 1</a></li>
+                                        <li><a class="productTypes-item" href="#">Single Type 2</a></li>
+                                        <li><a class="productTypes-item" href="#">Single Type 3</a></li>
+                                        <li><a class="productTypes-item" href="#">Single Type 4</a></li>
+                                        <li><a class="productTypes-item" href="#">Thumbnails Left</a></li>
+                                        <li><a class="productTypes-item" href="#">Zoom Image</a></li>
+                                    </ul>
+                                </ul>
+
+                                <ul class="shop-menu">
+                                    <li><a class="shop-item" href="#">Shop Pages</a></li>
+                                    <ul class="shopPages-menu">
+                                        <li><a class="shopPages-item" href="#">Cart</a></li>
+                                        <li><a class="shopPages-item" href="#">Checkout</a></li>
+                                        <li><a class="shopPages-item" href="#">My account</a></li>
+                                        <li><a class="shopPages-item" href="#">Wishlist</a></li>
+                                        <li><a class="shopPages-item" href="#">Order Tracking</a></li>
+                                        <li><a class="shopPages-item" href="#">Order on WhatsApp</a></li>
+                                    </ul>
+                                </ul>
+
+                                <ul class="shop-menu">
+                                    <li><a class="shop-item" href="#">Shop Layouts</a></li>
+                                    <ul class="shopLayouts-menu">
+                                        <li><a class="shopLayouts-item" href="#">Two Columns</a></li>
+                                        <li><a class="shopLayouts-item" href="#">Three Columns</a></li>
+                                        <li><a class="shopLayouts-item" href="#">Three Columns Wide</a></li>
+                                        <li><a class="shopLayouts-item" href="#">Four Columns</a></li>
+                                        <li><a class="shopLayouts-item" href="#">Four Columns Wide</a></li>
+                                        <li><a class="shopLayouts-item" href="#">Five Columns wide</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link toggle" href="#"><i class="fa-solid fa-fish-fins"></i>MEATS &
+                                SEAFOOD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link toggle" href="#" aria-disabled="true"><i
+                                    class="fa-solid fa-cake-candles"></i>BAKERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link toggle" href="#" aria-disabled="true"><i
+                                    class="fa-solid fa-mug-hot"></i>BEVERAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link toggle" href="#" aria-disabled="true">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link toggle" href="#" aria-disabled="true">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container-carousel">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-img">
+                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/slider-image-6.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-content">
+                                    <div class="content-header">
+                                        <p>EXCLUSIVE OFFER <span>-40% OFF</span></p>
+                                    </div>
+                                    <div class="content-main">
+                                        <h1>Quality Freshness <br> Guaranteed!</h1>
+                                        <p>Only this week. Don't miss...</p>
+                                        <p>from <span>$14.35</span></p>
+                                    </div>
+                                    <div class="content-footer">
+                                        <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-img">
+                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/slider-image-7.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-content">
+                                    <div class="content-header">
+                                        <p>EXCLUSIVE OFFER <span>-20% OFF</span></p>
+                                    </div>
+                                    <div class="content-main">
+                                        <h1>A different kind of <br> grocery store</h1>
+                                        <p>Only this week. Don't miss...</p>
+                                        <p>from <span>$7.99</span></p>
+                                    </div>
+                                    <div class="content-footer">
+                                        <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="productCards ">
+
+                    <div class="productBeverages">
+
+                        <div class="card curss" style="width: 15rem;">
+                            <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/baverages-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h6 style="text-align: center;"><b>Beverages</b></h6><br>
+                              <p class="card-Beverages" style="text-align: center;">11 Items</p>
+
+                            </div>
+                          </div>
+
+
+                    </div>
+
+
+                    <div class="allProducts">
+
+                        <div class="card mb-3 curss" id="cards" style="width: 210px; height: 181px;">
+                            <div class="row g-0" style="justify-content: center; align-items: center; margin-top: 25px;">
+                              <div class="col-md-4">
+                                <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/biscuitssnacks-1.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Fruits & Snacks</h5>
+                                  <p class="card-text">6 Items</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    
+
+                        <div class="card mb-3 curss" id="cards" style="width: 210px; height: 181px;">
+                            <div class="row g-0" style="justify-content: center; align-items: center; margin-top: 25px;">
+                              <div class="col-md-4">
+                                <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/breadbakery-1.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Breads & Bakery</h5>
+                                  <p class="card-text">6 Items</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
                         </div>
 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link toggle" href="#"><i class="fa-solid fa-fish-fins"></i>MEATS & SEAFOOD</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link toggle" href="#" aria-disabled="true"><i
-                                class="fa-solid fa-cake-candles"></i>BAKERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link toggle" href="#" aria-disabled="true"><i
-                                class="fa-solid fa-mug-hot"></i>BEVERAGES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link toggle" href="#" aria-disabled="true">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link toggle" href="#" aria-disabled="true">CONTACT</a>
-                    </li>
-                </ul>
+                            <div class="card mb-3 curss" id="cards" style="width: 210px; height: 181px;">
+                                <div class="row g-0" style="justify-content: center; align-items: center; margin-top: 25px;">
+                                  <div class="col-md-4">
+                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/dairy-1.jpg" class="img-fluid rounded-start" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Breakfast & Dairy</h5>
+                                      <p class="card-text">8 Items</p>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+
+
+                                <div class="card mb-3 curss" id="cards" style="width: 210px; height: 181px;">
+                                    <div class="row g-0" style="justify-content: center; align-items: center; margin-top: 25px;">
+                                      <div class="col-md-4">
+                                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/category-image4.png" class="img-fluid rounded-start" alt="...">
+                                      </div>
+                                      <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Frozen & Foods</h5>
+                                          <p class="card-text">7 Items</p>
+                                          
+                                       </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+                                    <div class="card mb-3 curss" id="cards1" style="width: 210px; height: 181px;">
+                                        <div class="row g-0" style="justify-content: center; align-items: center; margin-top: 25px;">
+                                          <div class="col-md-4">
+                                            <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/fruitvegetables-1.jpg" class="img-fluid rounded-start" alt="...">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Fruits & Vegetables</h5>
+                                              <p class="card-text">12 Items</p>
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+
+                                    
+
+
+                                        <div class="card mb-3 curss" id="cards1" style="width: 210px; height: 181px;">
+                                            <div class="row g-0" style="justify-content: center; align-items: center; margin-top: 25px;">
+                                              <div class="col-md-4">
+                                                <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/fruitvegetables-1.jpg" class="img-fluid rounded-start" alt="...">
+                                              </div>
+                                              <div class="col-md-8">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">Grocery & Staples</h5>
+                                                  <p class="card-text">7 Items</p>
+                                                  
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                        </div>
+                                              
+                                   
+                                                <div class="card mb-3 curss" id="cards1" style="width: 210px; height: 181px;">
+                                                    <div class="row g-0" style="justify-content: center; align-items: center; margin-top: 25px;">
+                                                      <div class="col-md-4">
+                                                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/household-1.jpg" class="img-fluid rounded-start" alt="...">
+                                                      </div>
+                                                      <div class="col-md-8">
+                                                        <div class="card-body">
+                                                          <h5 class="card-title">Household & Needs</h5>
+                                                          <p class="card-text">1 Items</p>
+                                                          
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+
+
+                                                    <div class="card mb-3 curss" id="cards1" style="width: 210px; height: 181px;">
+                                                        <div class="row g-0" style="justify-content: center; align-items: center; margin-top: 25px;">
+                                                          <div class="col-md-4">
+                                                            <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/meat-1.jpg" class="img-fluid rounded-start" alt="...">
+                                                          </div>
+                                                          <div class="col-md-8">
+                                                            <div class="card-body">
+                                                              <h5 class="card-title">Meats & Seafood</h5>
+                                                              <p class="card-text">5 Items</p>
+                                                              
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </div>
+
+                                        
+
+
+
+                        </div>
+
+
+
+                        
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
+
+
+
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"

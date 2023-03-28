@@ -88,8 +88,9 @@ body {
 
     .text-content{
         margin-top: 10px;
-        padding-left: 50px;
+        padding-left: 40px;
         font-size: 12px;
+        display: flex;
     }
 
     .input-group mb-3{
@@ -201,5 +202,107 @@ body {
       transform: rotate(180deg);
     }
 
+    .container{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        border-bottom: solid 1px lightgray;
+        
+        
+    }
+
+    .MainLine{
+        position: absolute;
+        padding-bottom: 20px;
+        border-radius: 30px;
+        margin-left: -25px;
+        
+        
+    }
+
+
+    .navMenu{
+        margin-left: 400px;
+        margin-top: -45px;
+    }
+
+    .carousel-img{
+      position: relative;
+  }
+  
+  .carousel-content{
+      position: absolute;
+      top: 100px;
+      left: 150px;
+  }
+  
+  .carousel-content .content-header span{
+      color: green;
+      border-radius: 35px;
+      background-color: rgb(143, 230, 143);
+      padding: 5px;
+  }
+  
+  .carousel-content .content-main span{
+      color: red;
+      font-weight: bold;
+      font-size: 30px;
+  }
+  
+  .carousel-content .content-footer button{
+      color: white;
+      border-radius: 35px;
+      background-color: rgb(13, 175, 219);
+      border: 1px solid rgb(13, 175, 219) ;
+      padding: 8px;
+  }
+
+  .productCards{
+    display: flex;
+    
+    
+    
+  }
+  
+  .productBeverages{
+
+    width: 250px;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  .allProducts{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .BiscuitsSnacks{
+    
+    display: flex;
+  }
+
+  .imgShop{
+    width: 100px;
+    height: 100px;
+    margin-top: 35px;
+
+  }
+
+  .shopTitle{
+
+    margin: 35px 35px 35px 35px;
+    
+  }
+
+  #cards{
+    margin-top: 20px;
+  }
+  #cards1{
+    margin-top: -40px;
+  }
+
+  .curss{
+    cursor: pointer;
+  }
     
     
