@@ -1,0 +1,54 @@
+<div class="container-carousel">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="carousel-img">
+                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/slider-image-6.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-content">
+                                    <div class="content-header">
+                                        <p>EXCLUSIVE OFFER <span>-40% OFF</span></p>
+                                    </div>
+                                    <div class="content-main">
+                                        <h1>Quality Freshness <br> Guaranteed!</h1>
+                                        <p>Only this week. Don't miss...</p>
+                                        <p>from <span>$14.35</span></p>
+                                    </div>
+                                    <div class="content-footer">
+                                        <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-img">
+                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/slider-image-7.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-content">
+                                    <div class="content-header">
+                                        <p>EXCLUSIVE OFFER <span>-20% OFF</span></p>
+                                    </div>
+                                    <div class="content-main">
+                                        <h1>A different kind of <br> grocery store</h1>
+                                        <p>Only this week. Don't miss...</p>
+                                        <p>from <span>$7.99</span></p>
+                                    </div>
+                                    <div class="content-footer">
+                                        <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>

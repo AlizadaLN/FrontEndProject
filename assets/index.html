@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="path/to/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="path/to/slick/slick-theme.css"/>
+        
+        
     <link rel="stylesheet" href="./css/style.css">
     <title>HomePage</title>
 </head>
@@ -27,10 +29,10 @@
                 <div class="navBar">
 
                     <div class="topnav" id="myTopnav">
-                        <a href="" class="active">About Us</a>
-                        <a href="">My Account</a>
-                        <a href="">Wishlist</a>
-                        <a href="">Order Tracking</a>
+                        <a href="#home" class="active">About Us</a>
+                        <a href="#news">My Account</a>
+                        <a href="#contact">Wishlist</a>
+                        <a href="#about">Order Tracking</a>
                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                             <i class="fa fa-bars"></i>
                         </a>
@@ -96,8 +98,8 @@
 
                 <div class="basketIcon">
                     <a class="nav-link" href="./basket.html">
-                        <p>$0.00 <i class="fa-solid fa-basket-shopping"></i><sup id="basketCount">0</sup></p>
-
+                        <p>$0.00  <i class="fa-solid fa-basket-shopping"></i><sup id="basketCount">0</sup></p>
+                        
                     </a>
                 </div>
 
@@ -113,146 +115,103 @@
 
 
             </div>
-        </div>
-        <div class="container">
-            <div class="MainLine">
-                <div class="btn-group">
-                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" style="border-radius: 30px; background-color: blue;">
-                        <i class="fa-solid fa-bars"></i> AllCategories
-                    </button>
-                    <ul class="dropdown-menu" style="width: 250px; padding-left: 20px;">
-                        <a href=""><i class="fa-solid fa-apple-whole"></i> Fruits and Vegetables<i
-                                class="fa-solid fa-chevron-right" style="margin-left: 20px;"></i></a>
-                        <ul>
-                            <li><a href="">1</a></li>
-                            <li><a href="">22</a></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">2</a></li>
+            <div class="container">
+                <ul class="nav nav-pills">
+                    <li class="nav-item home">
+                        <a class="nav-link toggle" data-bs-toggle="home" href="#" role="button"
+                            aria-expanded="false">HOME<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="home-menu div flex-column">
+                            <li><a class="home-item" href="#">Home 1</a></li>
+                            <li><a class="home-item" href="#">Home 2</a></li>
+                            <li><a class="home-item" href="#">Home 3</a></li>
+                            <li><a class="home-item" href="#">Home 4</a></li>
+                            <li><a class="home-item" href="#">Home 5</a></li>
                         </ul>
-
-
-
-
-
-                        <li><a href=""> <i class="fa-solid fa-fish"></i> Meats and Seafood</a></li>
-                        <li> <a href=""> <i class="fa-solid fa-egg"></i>Breakfast and Dairy</a></li>
-                        <li> <a href=""><i class="fa-solid fa-mug-hot"></i>Beverages</a></li>
-                        <li> <a href="">Breads and Bakery</a> </li>
-                        <li><a href="">Frozen Foods</a></li>
-                        <li><a href=""> Biscuits and Snacks</a></li>
-                        <li><a href="">Grocery and Staples</a> </li>
-                        <hr>
-                        <li>Value of the day</li>
-                        <li>Top 100 offers</li>
-                        <li>New Arrivals</li>
-                    </ul>
-                </div>
-
-
-                <div class="navMenu">
-
-                    <ul class="nav nav-pills">
-                        <li class="nav-item home">
-                            <a class="nav-link toggle" data-bs-toggle="home" href="#" role="button"
-                                aria-expanded="false">HOME<i class="fa-solid fa-chevron-down"></i></a>
-                            <ul class="home-menu div flex-column">
-                                <li><a class="home-item" href="#">Home 1</a></li>
-                                <li><a class="home-item" href="#">Home 2</a></li>
-                                <li><a class="home-item" href="#">Home 3</a></li>
-                                <li><a class="home-item" href="#">Home 4</a></li>
-                                <li><a class="home-item" href="#">Home 5</a></li>
+                    </li>
+                    <li class="nav-item shop">
+                        <a class="nav-link toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="div">
+                            <ul class="shop-menu">
+                                <li><a class="shop-item" href="#">Shop Lists</a></li>
+                                <ul class="shopList-menu">
+                                    <li><a class="shopLists-item" href="#">Shop Default</a></li>
+                                    <li><a class="shopLists-item" href="#">Shop Right Sidebar</a></li>
+                                    <li><a class="shopLists-item" href="#">Shop Wide</a></li>
+                                    <li><a class="shopLists-item" href="#">List Left Sidebar</a></li>
+                                    <li><a class="shopLists-item" href="#">Load More Button</a></li>
+                                    <li><a class="shopLists-item" href="#">Infinite Scrolling</a></li>
+                                </ul>
                             </ul>
-                        </li>
-                        <li class="nav-item shop">
-                            <a class="nav-link toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">SHOP<i class="fa-solid fa-chevron-down"></i></a>
-                            <div class="div">
-                                <ul class="shop-menu">
-                                    <li><a class="shop-item" href="#">Shop Lists</a></li>
-                                    <ul class="shopList-menu">
-                                        <li><a class="shopLists-item" href="#">Shop Default</a></li>
-                                        <li><a class="shopLists-item" href="#">Shop Right Sidebar</a></li>
-                                        <li><a class="shopLists-item" href="#">Shop Wide</a></li>
-                                        <li><a class="shopLists-item" href="#">List Left Sidebar</a></li>
-                                        <li><a class="shopLists-item" href="#">Load More Button</a></li>
-                                        <li><a class="shopLists-item" href="#">Infinite Scrolling</a></li>
-                                    </ul>
-                                </ul>
 
-                                <ul class="shop-menu">
-                                    <li><a class="shop-item" href="#">Product Detail</a></li>
-                                    <ul class="productDetail-menu">
-                                        <li><a class="productDetail-item" href="#">Product Default</a></li>
-                                        <li><a class="productDetail-item" href="#">Product Variable</a></li>
-                                        <li><a class="productDetail-item" href="#">Product Grouped</a></li>
-                                        <li><a class="productDetail-item" href="#">Product External</a></li>
-                                        <li><a class="productDetail-item" href="#">Product Downloadable</a></li>
-                                        <li><a class="productDetail-item" href="#">Product With Video</a></li>
-                                    </ul>
+                            <ul class="shop-menu">
+                                <li><a class="shop-item" href="#">Product Detail</a></li>
+                                <ul class="productDetail-menu">
+                                    <li><a class="productDetail-item" href="#">Product Default</a></li>
+                                    <li><a class="productDetail-item" href="#">Product Variable</a></li>
+                                    <li><a class="productDetail-item" href="#">Product Grouped</a></li>
+                                    <li><a class="productDetail-item" href="#">Product External</a></li>
+                                    <li><a class="productDetail-item" href="#">Product Downloadable</a></li>
+                                    <li><a class="productDetail-item" href="#">Product With Video</a></li>
                                 </ul>
+                            </ul>
 
-                                <ul class="shop-menu">
-                                    <li><a class="shop-item" href="#">Product Types</a></li>
-                                    <ul class="productTypes-menu">
-                                        <li><a class="productTypes-item" href="#">Single Type 1</a></li>
-                                        <li><a class="productTypes-item" href="#">Single Type 2</a></li>
-                                        <li><a class="productTypes-item" href="#">Single Type 3</a></li>
-                                        <li><a class="productTypes-item" href="#">Single Type 4</a></li>
-                                        <li><a class="productTypes-item" href="#">Thumbnails Left</a></li>
-                                        <li><a class="productTypes-item" href="#">Zoom Image</a></li>
-                                    </ul>
+                            <ul class="shop-menu">
+                                <li><a class="shop-item" href="#">Product Types</a></li>
+                                <ul class="productTypes-menu">
+                                    <li><a class="productTypes-item" href="#">Single Type 1</a></li>
+                                    <li><a class="productTypes-item" href="#">Single Type 2</a></li>
+                                    <li><a class="productTypes-item" href="#">Single Type 3</a></li>
+                                    <li><a class="productTypes-item" href="#">Single Type 4</a></li>
+                                    <li><a class="productTypes-item" href="#">Thumbnails Left</a></li>
+                                    <li><a class="productTypes-item" href="#">Zoom Image</a></li>
                                 </ul>
+                            </ul>
 
-                                <ul class="shop-menu">
-                                    <li><a class="shop-item" href="#">Shop Pages</a></li>
-                                    <ul class="shopPages-menu">
-                                        <li><a class="shopPages-item" href="#">Cart</a></li>
-                                        <li><a class="shopPages-item" href="#">Checkout</a></li>
-                                        <li><a class="shopPages-item" href="#">My account</a></li>
-                                        <li><a class="shopPages-item" href="#">Wishlist</a></li>
-                                        <li><a class="shopPages-item" href="#">Order Tracking</a></li>
-                                        <li><a class="shopPages-item" href="#">Order on WhatsApp</a></li>
-                                    </ul>
+                            <ul class="shop-menu">
+                                <li><a class="shop-item" href="#">Shop Pages</a></li>
+                                <ul class="shopPages-menu">
+                                    <li><a class="shopPages-item" href="#">Cart</a></li>
+                                    <li><a class="shopPages-item" href="#">Checkout</a></li>
+                                    <li><a class="shopPages-item" href="#">My account</a></li>
+                                    <li><a class="shopPages-item" href="#">Wishlist</a></li>
+                                    <li><a class="shopPages-item" href="#">Order Tracking</a></li>
+                                    <li><a class="shopPages-item" href="#">Order on WhatsApp</a></li>
                                 </ul>
+                            </ul>
 
-                                <ul class="shop-menu">
-                                    <li><a class="shop-item" href="#">Shop Layouts</a></li>
-                                    <ul class="shopLayouts-menu">
-                                        <li><a class="shopLayouts-item" href="#">Two Columns</a></li>
-                                        <li><a class="shopLayouts-item" href="#">Three Columns</a></li>
-                                        <li><a class="shopLayouts-item" href="#">Three Columns Wide</a></li>
-                                        <li><a class="shopLayouts-item" href="#">Four Columns</a></li>
-                                        <li><a class="shopLayouts-item" href="#">Four Columns Wide</a></li>
-                                        <li><a class="shopLayouts-item" href="#">Five Columns wide</a></li>
-                                    </ul>
+                            <ul class="shop-menu">
+                                <li><a class="shop-item" href="#">Shop Layouts</a></li>
+                                <ul class="shopLayouts-menu">
+                                    <li><a class="shopLayouts-item" href="#">Two Columns</a></li>
+                                    <li><a class="shopLayouts-item" href="#">Three Columns</a></li>
+                                    <li><a class="shopLayouts-item" href="#">Three Columns Wide</a></li>
+                                    <li><a class="shopLayouts-item" href="#">Four Columns</a></li>
+                                    <li><a class="shopLayouts-item" href="#">Four Columns Wide</a></li>
+                                    <li><a class="shopLayouts-item" href="#">Five Columns wide</a></li>
                                 </ul>
-                            </div>
+                            </ul>
+                        </div>
 
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link toggle" href="#"><i class="fa-solid fa-fish-fins"></i>MEATS &
-                                SEAFOOD</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link toggle" href="#" aria-disabled="true"><i
-                                    class="fa-solid fa-cake-candles"></i>BAKERY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link toggle" href="#" aria-disabled="true"><i
-                                    class="fa-solid fa-mug-hot"></i>BEVERAGES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link toggle" href="#" aria-disabled="true">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link toggle" href="#" aria-disabled="true">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggle" href="#"><i class="fa-solid fa-fish-fins"></i>MEATS & SEAFOOD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggle" href="#" aria-disabled="true"><i
+                                class="fa-solid fa-cake-candles"></i>BAKERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggle" href="#" aria-disabled="true"><i
+                                class="fa-solid fa-mug-hot"></i>BEVERAGES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggle" href="#" aria-disabled="true">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggle" href="#" aria-disabled="true">CONTACT</a>
+                    </li>
+                </ul>
 
                 <div class="container-carousel">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -466,24 +425,445 @@
 
 
                         
+                </div>
+
+
+                <div class="container-cards">
+                    <div class="cards-left curss" style="width: 300px; height: 900px;" >
+                      <div class="left-header">
+              
+                      </div>
+                      <div class="left-img" style="justify-content: center; align-items: center;" >
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-50-346x310.jpg" alt="">
+                      </div>
+                      <div class="left-content">
+                        <span><del>$9.35</del></span><span>$4.49</span>
+                        <h5 class="card-title">Chobani Complete Vanilla Greek Yogurt</h5>
+                        <p class="card-text">1kg IN STOCK</p>
+                        <i class="fa-regular fa-star"></i><br>
+                      </div>
+                      <div class="left-footer">
+              
+                      </div>
+                    </div>
+                    <div class="cards-right">
+                      <div class="card curss" style="width: 243px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-62-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">All Natural Italian-Style Chicken Meatballs</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                      </div>
+                      <div class="card curss" style="width: 243px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-60-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Angie's Boomchickapop Sweet & Salty Kettle Corn</h5>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span> <del>$9.35</del>   $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                      </div>
+                      <div class="card curss" style="width: 243px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                      </div>
+                      <div class="card curss" style="width: 243px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-45-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Foster Farms Takeout Crispy Classic Buffalo Wing</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                      </div>
+                      <div class="card curss" style="width: 243px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-59-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Blue Diamond Almonds Lightly Salted</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                      </div>
+                      <div class="card curss" style="width: 243px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-58-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Blueberries - 1 Pint Package</h6><br>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="container-pict">
+                    <div class="pict-item1">
+                      <div class="pict-img curss" >
+                          <img style="width: 530px; height: 250px; border-radius: 5px;" src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/bacola-banner-11.jpg" alt="...">
+                      </div>
+                      <div class="pict-content">
+                          <div class="pict-header">
+                              <p>WEEKEND DISCOUNT 40%</p>
+                          </div>
+                          <div class="pict-main">
+                              <h3>Cookie and Ice Cream</h3>
+                              <p>Bacola Weekend Discount</p>
+                          </div>
+                          <div class="pict-footer">
+                              <button>Shop Now</button>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="pict-item2 curss">
+                      <div class="pict-img">
+                          <img style="width: 530px; height: 250px; border-radius: 5px;" src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/bacola-banner-12.jpg" alt="...">
+                      </div>
+                      <div class="pict-content">
+                          <div class="pict-header">
+                              <p>WEEKEND DISCOUNT 30%</p>
+                          </div>
+                          <div class="pict-main">
+                              <h3>Cookie and Ice Cream</h3>
+                              <p>Bacola Weekend Discount</p>
+                          </div>
+                          <div class="pict-footer">
+                              <button>Shop Now</button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="littleInfo">
+                    <h5>BEST SELLERS</h5>
+                    <SPan>Do not miss the current offers until the end of March.</SPan>
+                </div>
+
+                <div class="productsSlide">
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
                     </div>
 
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card curss" style="width: 243px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+
+                    <div class="card curss" style="width: 243px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+
+                    <div class="card curss" style="width: 243px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card curss" style="width: 243px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+                    
                 </div>
+
+                <div class="discount"><h5>SAVE AN EXTRA 5-10% ON EVERY AUTOSHIP ORDER!</h5></div>
+
+                <div class="shopProducts">
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    <div class="card curss" style="width: 220px; height: 450px;">
+                        <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-46-346x310.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+                          <p class="card-text">IN STOCK</p>
+                          <i class="fa-regular fa-star"></i><br>
+                          <span><del>$9.35</del>  $7.25</span><br>
+                          <a href="#" class="btn btn-primary">Add to cart</a>
+                          
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="weekendDiscount">
+                    <div class="Ofers1">
+                    <img style="width: 350px; border-radius: 10px;" src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/bacola-banner-05.jpg" alt="">
+                    <div class="discountPercente"><h6>Wekeend Discount 20%</h6></div>
+                    <div class="discountProduct"><h3>Natural Eggs</h3></div>
+                    <div class="productExplain"><p>Eat one every day</p></div>
+                    <button>Shop Now</button>
+                
+                     </div>
+                    
+                     <div class="Ofers2"> 
+                    <img style="width: 350px; border-radius: 10px;" src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/bacola-banner-06.jpg" alt="">
+                    <div class="discountPercente"><h6>Wekeend Discount 20%</h6></div>
+                    <div class="discountProduct"><h3>Natural Eggs</h3></div>
+                    <div class="productExplain"><p>Eat one every day</p></div>
+                    <button>Shop Now</button>
+
+                    </div>
+                    
+                    
+                    <div class="Ofers3"> 
+                    <img style="width: 350px; border-radius: 10px;" src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/bacola-banner-10.jpg" alt="">
+                    <div class="discountPercente"><h6>Wekeend Discount 20%</h6></div>
+                    <div class="discountProduct"><h3>Natural Eggs</h3></div>
+                    <div class="productExplain"><p>Eat one every day</p></div>
+                    <button>Shop Now</button>
+                
+    
+                     </div>
+                 
+
+
+
+                </div>
+                  
+
+
+
+                
 
 
             </div>
         </div>
-
-
-
 </body>
-
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.productsSlide').slick({
+            setting- name: setting - value
+      });
+    });
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
     integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+<script type="text/javascript" src="path/to/slick/slick.min.js"></script>
 <script src="./js/script.js"></script>
 
 </html>

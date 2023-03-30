@@ -88,9 +88,8 @@ body {
 
     .text-content{
         margin-top: 10px;
-        padding-left: 40px;
+        padding-left: 50px;
         font-size: 12px;
-        display: flex;
     }
 
     .input-group mb-3{
@@ -147,7 +146,7 @@ body {
 
 
 
-    
+    /* main menu nav */
     .div{
         display: flex;
         position: absolute;
@@ -202,32 +201,14 @@ body {
       transform: rotate(180deg);
     }
 
-    .container{
-        display: flex;
-        width: 100%;
-        height: 50px;
-        border-bottom: solid 1px lightgray;
-        
-        
-    }
+    /* main menu nav */
 
-    .MainLine{
-        position: absolute;
-        padding-bottom: 20px;
-        border-radius: 30px;
-        margin-left: -25px;
-        
-        
-    }
+    /* carousel */
 
-
-    .navMenu{
-        margin-left: 400px;
-        margin-top: -45px;
-    }
 
     .carousel-img{
       position: relative;
+     
   }
   
   .carousel-content{
@@ -256,6 +237,12 @@ body {
       border: 1px solid rgb(13, 175, 219) ;
       padding: 8px;
   }
+
+  /* carousel */
+
+
+
+  /* product cards */
 
   .productCards{
     display: flex;
@@ -304,5 +291,146 @@ body {
   .curss{
     cursor: pointer;
   }
+
+  /* product cards */
+
+  /* container-pict */
+
+
+  .container-pict{
+    width: 1029px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pict-item1 .pict-img{
+    width: 100px;
+    position: relative;
+    margin-left: -50px;
+    padding: 50px;
+    
+  }
+  
+  .pict-item1 .pict-content{
+    position: absolute;
+    top: 1950px;
+    left: 160px;
+    
+  }
+  
+  .pict-item1 .pict-content .pict-header{
+    color: red;
+  }
+  
+  .pict-item1 .pict-content .pict-footer button{
+    color: white;
+    border-radius: 35px;
+    background-color: blue;
+    border: 1px solid blue;
+    padding: 7px;
+    width: 100px;
+  }
+  
+  .pict-item2 .pict-img{
+    
+    position: relative;
+    margin-left: 80px;
+    padding-top: 50px;
+    right: -60px;
     
     
+  }
+  
+  .pict-item2 .pict-content{
+    
+    position: absolute;
+    top: 1950px;
+    right: 360px;
+  }
+  
+  .pict-item2 .pict-content .pict-header{
+    color: red;
+  }
+  
+  .pict-item2 .pict-content .pict-footer button{
+    color: white;
+    border-radius: 35px;
+    background-color: red;
+    border: 1px solid red;
+    padding: 7px;
+    width: 100px;
+  }
+
+  /* container-pict */
+
+
+  /* container cards */
+
+  .container-cards{
+    display: flex;
+    
+    
+  }
+  
+  
+   .cards-left{
+    
+    border: 2px solid red;
+    
+    
+  }
+  
+  .cards-left .left-img img{
+    height: auto;
+    
+    margin-top: 50%;
+}
+  
+  
+  .cards-right{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+  } 
+  
+ /* container cards */
+
+ /* productSlide */
+ .productsSlide{
+  padding-top: 30px;
+  display: flex;
+  
+ }
+
+ .discount{
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 15px;
+  margin-top: 30px;
+  
+  background-color: #FBEACF;
+  border-radius: 10px;
+ }
+
+
+ .shopProducts{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .weekendDiscount{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  justify-content: space-between;
+  
+  
+ }
+
+
+ 
+ 
