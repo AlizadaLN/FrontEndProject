@@ -431,6 +431,59 @@ body {
   
  }
 
+ .discInfo{
+  width: 40px;
+  height: 20px;
+  background-color: #6EC1E4;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+
+ }
+
+ .discInfo h6{
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  justify-content: center;
+
+ }
+
+ .organicText{
+  width: 70px;
+  height: 20px;
+  padding-bottom: 15px;
+  background-color: #7bdcb5; 
+  margin-left: 20px;
+  margin-top: 5px;
+  border-radius: 15px;
+  color: #61CE70;
+  font-size: 18px;
+  
+  
+}
+
+.textRecomended{
+  width: 90px;
+  height: 20px;
+  padding-bottom: 15px;
+  background-color: gray; 
+  margin-left: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 10px;
+}
+
+.card .btn {
+  background-color: #fcb900;
+  border-radius: 30px;
+  border: none;
+}
+
+
+
+
 
  
  
