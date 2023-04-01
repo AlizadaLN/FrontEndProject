@@ -741,6 +741,7 @@ body {
   height: 400px;
   transition: all 0.5s;
   
+  
 }
 
 .addSlideBtn{
@@ -765,4 +766,29 @@ body {
   opacity: 1; 
   visibility: visible; 
   
+}
+
+.rightSide{
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+.leftSide{
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+.posRel{
+  position: relative;
+  height: 400px;
+  width: 20%;
+}
+.abs1{
+  position: absolute;
+  z-index: 1;
+}
+
+.abs2{
+  position: absolute;
+  z-index: 2;
 }
