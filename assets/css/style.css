@@ -210,6 +210,7 @@ body {
 
     .carousel-img{
       position: relative;
+      width: 100%;
      
   }
   
@@ -315,7 +316,7 @@ body {
   
   .pict-item1 .pict-content{
     position: absolute;
-    top: 1950px;
+    top: 1850px;
     left: 160px;
     
   }
@@ -346,7 +347,7 @@ body {
   .pict-item2 .pict-content{
     
     position: absolute;
-    top: 1950px;
+    top: 1850px;
     right: 360px;
   }
   
@@ -357,8 +358,8 @@ body {
   .pict-item2 .pict-content .pict-footer button{
     color: white;
     border-radius: 35px;
-    background-color: red;
-    border: 1px solid red;
+    background-color: crimson;
+    border: 1px solid crimson;
     padding: 7px;
     width: 100px;
   }
@@ -369,18 +370,39 @@ body {
   /* container cards */
 
   .container-cards{
+    
+    height: 800px;
     display: flex;
-    margin-left: -25px;
+    
     
     
   }
+
+  .cards-right{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    
+    
+  }
+
+  .boxProduct{
+    position: relative;
+    height: 400px;
+    width: 222px;
+
+  }
   
   .deals-container {
-    width: 350px;
-    height: 900px;
-    margin-left: 20px;
+    width: 360px;
+    height: 800px;
+    margin-left: 10px;
+    padding-top: 20px;
     border: 2px solid red;
-    z-index: 100%;
+    z-index: 1;
     padding: auto;
     box-sizing: border-box;
 
@@ -395,7 +417,60 @@ body {
 
   }
 
+  .discInfo1{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: crimson;
+    margin-left: 20px;
+    margin-top: -300px;
+    border-radius: 50%;
+   }
 
+   .discInfo1 h6{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+
+   }
+
+   .dealsSpan{
+    margin-left: 30px; 
+    font-size: 20px;
+   }
+
+   .dealsEndText{
+    position: absolute;
+    left: 350px;
+    margin-top: 100px;
+    display: flex;
+    
+   }
+
+   .boldLine{
+    width: 300px;
+    border: solid 8px #ff6048;
+    border-radius: 10px;
+    margin-top: 130px;
+    margin-left: 20px;
+    background: linear-gradient(90deg, #d51243 0%, #ff6048 50%, #ffcd00 100%);
+    animation: gradient-move 10s ease infinite;
+  }
+  
+  @keyframes gradient-move {
+    0% {
+      background-position: left; 
+    }
+    100% {
+      background-position: right; 
+    }
+  }
+  
+  
+  
+  
   #countdown {
     font-size: 2px;
 
@@ -443,26 +518,95 @@ body {
     color: gray;
   }
   
-   /* .cards-left{
+   
+  
+ 
+
+  .star{
+    color: #fcb900; 
+    bottom: 115px; 
+    font-size: smaller;
+  }
+  
+  .heartMaxIcon{
+  
+    top: 10px; 
+    right: 10px; 
+    position: absolute;
+    visibility: hidden; 
+     border-radius: 30px;
+     transition: 0.5s;
     
-    border: 2px solid red;
+  }
+  
+  .maximize{
+    position: absolute;
+    right: 10px; 
+    top:10px"
+  }
+  
+  .heart{
+    position: absolute;
+    right: 10px; 
+    top:30px
+  }
+  
+  .slideHover{
+    width: 220px; 
+    height: 400px;
+    transition: all 0.5s;
     
     
   }
   
-  .cards-left .left-img img{
-    height: auto;
-    
-    margin-top: 50%;
-}
-   */
+  .addSlideBtn{
+    background-color: blue;
+     margin-bottom: -100px;
+     opacity: 0; 
+     visibility: hidden; 
+     border-radius: 30px;
+     transition: 0.5s;
+  }
   
-  .cards-right{
-
+  .slideHover:hover {
+    height: 450px;
+  }
+  
+  .slideHover:hover .addSlideBtn{
+    opacity: 1; 
+    visibility: visible; 
+  }
+  
+  .slideHover:hover .heartMaxIcon{
+    opacity: 1; 
+    visibility: visible; 
+    
+  }
+  
+  .rightSide{
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 50px;
-  } 
+    height: 400px;
+    width: 100%;
+  }
+  .leftSide{
+    display: flex;
+    height: 400px;
+    width: 100%;
+  }
+  .posRel{
+    position: relative;
+    height: 400px;
+    width: 20%;
+  }
+  .abs1{
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .abs2{
+    position: absolute;
+    z-index: 2;
+  }
   
  /* container cards */
 
@@ -504,6 +648,8 @@ body {
   border-radius: 5px;
 
  }
+
+ 
 
  .discInfo h6{
   font-size: 15px;
@@ -707,88 +853,3 @@ body {
 
 
 
-.star{
-  color: #fcb900; 
-  bottom: 115px; 
-  font-size: smaller;
-}
-
-.heartMaxIcon{
-
-  top: 10px; 
-  right: 10px; 
-  position: absolute;
-  visibility: hidden; 
-   border-radius: 30px;
-   transition: 0.5s;
-  
-}
-
-.maximize{
-  position: absolute;
-  right: 10px; 
-  top:10px"
-}
-
-.heart{
-  position: absolute;
-  right: 10px; 
-  top:30px
-}
-
-.slideHover{
-  width: 220px; 
-  height: 400px;
-  transition: all 0.5s;
-  
-  
-}
-
-.addSlideBtn{
-  background-color: blue;
-   margin-bottom: -100px;
-   opacity: 0; 
-   visibility: hidden; 
-   border-radius: 30px;
-   transition: 0.5s;
-}
-
-.slideHover:hover {
-  height: 450px;
-}
-
-.slideHover:hover .addSlideBtn{
-  opacity: 1; 
-  visibility: visible; 
-}
-
-.slideHover:hover .heartMaxIcon{
-  opacity: 1; 
-  visibility: visible; 
-  
-}
-
-.rightSide{
-  display: flex;
-  height: 400px;
-  width: 100%;
-}
-.leftSide{
-  display: flex;
-  height: 400px;
-  width: 100%;
-}
-.posRel{
-  position: relative;
-  height: 400px;
-  width: 20%;
-}
-.abs1{
-  position: absolute;
-  z-index: 1;
-}
-
-.abs2{
-  position: absolute;
-  z-index: 2;
-}
