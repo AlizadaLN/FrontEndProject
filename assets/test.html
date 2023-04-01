@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Document</title>
+  <style>
+    .deals-container {
+      width: 350px;
+      height: 900px;
+      margin-left: 20px;
+      border: 2px solid red;
+      z-index: 100%;
+      padding: auto;
+      box-sizing: border-box;
+
+
+
+    }
+
+    .deals-container img {
+      height: auto;
+      margin-top: -60px;
+      padding: auto;
+
+    }
+
+
+    #countdown {
+      font-size: 2px;
+
+      justify-content: space-between;
+      visibility: hidden;
+
+
+
+    }
+
+    .time {
+      display: flex;
+      margin-left: 30px;
+      font-size: 20px;
+
+
+    }
+
+    .timer {
+      position: relative;
+    }
+
+    .boxTime {
+      width: 45px;
+      height: 45px;
+      background-color: crimson;
+      margin-bottom: 100px;
+      margin-left: 10px;
+      border-radius: 10px;
+      justify-content: center;
+      text-align: center;
+      align-content: center;
+      color: white;
+      align-items: center;
+      padding: 5px;
+      font-style: bold;
+
+
+    }
+
+    .timer p{
+      position: absolute;
+      top: 60px;
+      left: 50px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="deals-container left">
+
+    <h2 style="color: blue; margin-left: 40px;">Deals of the <b> week</b></h2>
+
+    <div class="timer">
+
+      <div class="time">
+        <div class="boxTime" id="days">00</div>
+
+        <div class="boxTime" id="hours">00</div>
+
+        <div class="boxTime" id="minutes">00</div>
+
+        <div class="boxTime" id="seconds">00</div>
+      </div>
+      <p>Remains until the end of the offer</p>
+      <div style="margin-left: 60px;" id="countdown"></div>
+
+    </div>
+    <div class="deals">
+
+      <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-50-346x310.jpg" alt="">
+    </div>
+    <div class="left-content">
+      <div class="discInfo">
+        <h6>19%</h6>
+      </div>
+      <span style="margin-left: 30px; font-size: 20px;"><del>$9.35 </del></span><span> $4.49</span>
+      <h5 class="card-title" style="margin-left: 30px;">Chobani Complete Vanilla Greek Yogurt</h5>
+      <p class="card-text" style="color: green; margin-left: 30px;">1kg IN STOCK</p>
+      <i class="fa-regular fa-star"></i><br>
+    </div>
+  </div>
+  
+
+  <div class="card curss" style="width: 220px; height: 450px;">
+    <div class="discInfo"><h6>26%</h6></div>
+    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-346x310.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h6 class="card-title">Zevia Kidz Strawberry Lemonade Zero Calorie Soda</h6>
+      <p class="card-text">IN STOCK</p>
+      <div class="star" style="color: #fcb900; position:absolute; bottom: 80px;">
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i><br>
+    </div>
+      <span><del>$7.95</del>  $5.95</span><br>
+      <a href="#" class="btn btn-primary" style="background-color: blue;">Buy product</a>
+      
+    </div>
+</div>
+
+
+<div class="card curss" style="width: 220px; height: 450px;">
+  <div class="discInfo"><h6>26%</h6></div>
+  <div class="heartMaxIcon" style="top: 10px; right: 10px; position: absolute;">
+  <div class="maximize"><i class="fa-solid fa-maximize" style="position: absolute;right: 10px; top:10px" ></i></div>
+  <div class="heart" style="position: absolute;right: 10px; top:30px"><i class="fa-regular fa-heart"></i></div>
+  </div>
+  
+  
+  <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-346x310.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h6 class="card-title" style="font-size: 12px;">Zevia Kidz Strawberry Lemonade Zero Calorie Soda</h6>
+    <p class="card-text" style="font-size: 12px;">IN STOCK</p>
+    <div class="star" style="color: #fcb900; position:absolute; bottom: 115px; font-size: smaller;">
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+      <i class="fa-regular fa-star"></i>
+  </div>
+
+
+
+
+</body>
+<script>
+
+
+
+
+  const endDate = new Date('2023-04-07T23:59:59').getTime();
+
+
+  const countdown = setInterval(() => {
+
+    const now = new Date().getTime();
+
+
+    const distance = endDate - now;
+
+    // Calculate the days, hours, minutes, and seconds remaining
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
+
+
+    document.getElementById('countdown').innerHTML = `${days} : ${hours} : ${minutes} : ${seconds}`;
+    document.getElementById('days').innerHTML = pad(days);
+    document.getElementById('hours').innerHTML = pad(hours);
+    document.getElementById('minutes').innerHTML = pad(minutes);
+    document.getElementById('seconds').innerHTML = pad(seconds);
+
+
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.getElementById('countdown').innerHTML = 'EXPIRED';
+    }
+  }, 1000);
+
+  function pad(number) {
+    return number.toString().padStart(2, '0');
+  }
+
+
+
+
+</script>
+
+
+</html>
