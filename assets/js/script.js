@@ -92,3 +92,40 @@ registerLink.addEventListener('click', () => {
     registerForm.style.display = 'block';
 });
 
+//for Shop Page
+
+var plusIcons = document.querySelectorAll('.plus-icon');
+  plusIcons.forEach(function(icon) {
+    icon.addEventListener('click', function() {
+      this.parentNode.querySelector('.nested-checkboxes').classList.toggle('show');
+    });
+  });
+
+
+
+
+
+
+ // filter price
+
+ document.addEventListener("DOMContentLoaded", function() {
+    var priceSlider = document.getElementById("priceSlider");
+    var priceLabel = document.getElementById("price");
+  
+    // Initialize the slider with default values
+    noUiSlider.create(priceSlider, {
+      start: [0, 70], // Set initial values for min and max price
+      connect: true, // Enable a range slider
+      range: {
+        'min': 0, // Set minimum value for the slider
+        'max': 70 // Set maximum value for the slider
+      }
+    });
+  
+    // Update the price range label with slider values
+    priceSlider.noUiSlider.on("update", function(values) {
+      var minPrice = values[0];
+      var maxPrice = values[1];
+      priceLabel.innerHTML = "Price: $" + minPrice + " - $" + maxPrice;
+    });
+  });

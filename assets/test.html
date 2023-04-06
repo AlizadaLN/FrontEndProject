@@ -18,134 +18,251 @@
 
     <style>
 
+      
+/* .navBarNewWidth {
+  width: 33%;
+} 
 
- /* .secondRow {
-  
-}
-
-.form-inline {
-
-  width: 547.66px;
-  height: 60px;
-  background-color: lightgrey;
-  display: flex;
-  border-radius: 5px;
-
-}
-
-.signIn i {
-  position: absolute;
-  font-size: 20px;
-  padding: 40px;
-  margin-left: -35px;
-
-
-
-}
-
-.basketIcon {
- 
-  font-size: 20px;
-  padding: 25px;
-  
-
-}
-
-.btn btn-primary {
-
-  display: flex;
-}  */
-
-
-/* .bacola{
+.firstRow {
   width: 100%;
-  height: 100px;
+  height: 35px;
+  border-bottom: solid 0.5px lightgray;
   display: flex;
-  border-top: solid 0.5px lightgray;
-  padding-top: 10px;
-  
+
 
 }
 
-.bacola .img{
-    width: 180px;
-    
-}
-.img p{
-    font-size: 13px; color: gray;
+.topbar-notice {
+  margin-top: 10px;
+
+  font-size: 12px;
+
+
 }
 
-.modalLocation {
-  width: 180px;
-  height: 60px;
+.text-content {
+  margin-top: 10px;
+  padding-left: 50px;
+  font-size: 12px;
 }
 
-.searchBar input{
-    background-color:  lightgrey; 
-    border:none; 
-    width: 485px;
-     height: 60px; 
-     border-radius: 15px;
+.input-group mb-3 {
+  padding-left: 200px;
 }
-.searchBar button{
-    background-color:  lightgrey; 
-    border: none;
+
+.navbar-toggler {
+  overflow: hidden;
+  background-color: blue;
+
+}
+
+
+.topnav {
+  overflow: hidden;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+
+  padding: 10px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topnav a:hover {
+
+  color: blue;
+}
+
+
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .topnav.responsive {
+    flex-direction: column;
+  }
+
+  .topnav.responsive a {
+    display: block;
+    text-align: center;
+  }
 } */
+ 
 
-.bacola{
-  padding: 0;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  border-top: solid 0.5px lightgray;
-  padding-top: 10px;
-  background-color: white;
-}
+/* Adjusting the width of the navbar and its contents for smaller screens */
+@media (max-width: 767px) {
+  .navBarNewWidth {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
   
-
-  .modalLocation {
-  width: 160px;
-  height: 60px;
-  border: solid black;
-}
-.icons{
+  .topnav {
     display: flex;
-}
-
-.searchBar{
-    
-    margin-left: -40px;
-}
-.searchBar input{
-    
-  width: 547.66px;
-  height: 60px;
-  background-color: lightgrey;
-  display: flex;
-  border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   
+  .topnav a {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  
+  .topbar-notice {
+    padding-left: 0;
+  }
+  
+  .text-content {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  
+  .language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .language > * {
+    margin-right: 10px;
+  }
 }
 
-.searchBar button{
-    position: absolute;
-    right: -320px;
-    top: 20px;
-    border: none;
-    color: black;
+/* Styling the navbar */
+.navBar {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.icons{
-    width: 150px;
+/* Styling the links in the navbar */
+.topnav a {
+  color: #2bbef9;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 0 15px;
+  line-height: 35px;
+}
+
+.topnav a:hover {
+  color: #000000;
+}
+
+.topnav a.active {
+  color: #000000;
+  border-bottom: 2px solid #2bbef9;
+}
+
+/* Styling the "100% Secure delivery" message in the navbar */
+.topbar-notice {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #999999;
+}
+
+.topbar-notice i {
+  color: #2bbef9;
+  margin-right: 5px;
+}
+
+/* Styling the "Need help? Call Us" message in the navbar */
+.text-content {
+  font-size: 14px;
+  font-weight: 600;
+  color: #999999;
+}
+
+.text-content a {
+  color: #2bbef9;
+}
+
+/* Styling the language and currency dropdowns in the navbar */
+.language select {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: #999999;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.language select:focus {
+  outline: none;
+}
+
+.language select option {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.language i {
+  color: #999999;
+}
+
+.firstRow{
+  height: 100px;
+  width: 100%;
+}
+
+
+/* Hide nested checkboxes by default */
+.nested-checkboxes {
+    display: none;
+  }
+
+  /* Show nested checkboxes when the plus icon is clicked */
+  .show {
+    display: block;
+  }
+
+  .productCategoriesShop i{
     position: absolute;
-    top: 35px;
-    justify-content: space-between;
-    right: -70px;
     
-
-}
-
-
-
+    
+  }
     </style>
 </head>
 
@@ -154,62 +271,777 @@
 
 
     
+  <!-- <div class="firstRow">
+    <div class="container">
+      <div class="row">
+    
 
-    <div class="container bacola">
-      
 
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
+      <nav class="navbar navbar-light navBar navBarNewWidth ">
+        <div class="container-fluid" col-4>
               <a class="navbar-brand" href="#">
-                    <div class="img col-2">
-                        <img src="./img/bacola-logo.png" alt="" style="width: 140px;">
-                        <p style="font-size: 10px;">Online Grocery Shopping Center</p>
-                    </div>
-              </a>
-              <a class="navbar-brand" href="#">
-                <div class="modalLocation col-2">
-                </div>
-              </a>
-              <a class="navbar-brand" href="#">
-                <nav class="navbar navbar-light bg-light  searchBar col-5">
-                    <div class="container-fluid">
-                      <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search for products..." aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                      </form>
-                    </div>
-                  </nav>
-              </a>
-
-              
-              <a class="navbar-brand" href="#">
-                
-                <div class="icons col-3">
-                    <div class="signIn"><i class="fa-regular fa-user"></i></div>
-                    <div class="total"><p>$0.00</p></div>
-                    <div class="basket"><i class="fa-solid fa-basket-shopping"></i><sup id="basketCount">0</sup></div>
-                    
-                </div>
-
-
-              </a>
-
-
+            <div class="topnav" id="myTopnav">
+              <a href="#home" class="active">About Us</a>
+              <a href="#news">My Account</a>
+              <a href="#">Wishlist</a>
+              <a href="#about">Order Tracking</a>
             </div>
-          </nav>
-       
+              </a>  
+           
+              <a class="navbar-brand" href="#">
+                <div class="topnav" id="myTopnav">
+                  <div class="topbar-notice" col-4>
+
+                    <p><i class="fa-regular fa-hand"></i>100% Secure delivery without contacting the courier</p>
+            
+                </div>
+              </a>
+
+              <a class="navbar-brand" href="#">
+                <div class="topnav" id="myTopnav">
+                  <div class="text-content" col-2>
+                    Need help? Call Us: <a href="tel:0020500"><strong style="color: #2bbef9">+ 0020
+                            500</strong></a>
+                </div>
+              </a>
+
+              <a class="navbar-brand" href="#">
+                <div class="topnav" id="myTopnav">
+                  <div style="display: flex; justify-content: end; padding-left: 50px;" class="language" col-2>
+                    <div class="input-group mb-3">
+                        <select style="font-size: 12px; border: none;" class="form-select"
+                            id="inputGroupSelect01">
+                            <option selected>English</option>
+                            <option value="1">Spanish</option>
+                            <option value="2">German</option>
+                        </select>
+                    </div>
+
+                    <div style="padding-left: 30px;" class="input-group mb-3">
+                      <select style="font-size: 12px; border: none;" class="form-select"
+                          id="inputGroupSelect01">
+                          <option selected>USD</option>
+                          <option value="1">INR</option>
+                          <option value="2">GBP</option>
+                      </select>
+                  </div>
+
+              </a>
+
+        </div>
+      </nav>
     </div>
 
-   
+        
+    </div>
+  </div> -->
 
 
+<!-- <div class="container">
+  <div class="shopProduct">
+    <div class="rightShop">
+      <div class="productCategoriesShop" style="width: 34%;">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox <i class="fa-light fa-plus"></i>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox 
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox 
+              </label>
+            </div>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox <i class="fa-light fa-plus"></i>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox <i class="fa-light fa-plus"></i>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox <i class="fa-light fa-plus"></i>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox <i class="fa-light fa-plus"></i>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox <i class="fa-light fa-plus"></i>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox <i class="fa-light fa-plus"></i>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox <i class="fa-light fa-plus"></i>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Default checkbox <i class="fa-light fa-plus"></i>
+          </label>
+        </div>
+      </div>
+    
+    
+</div>
+  </div>
+</div> -->
+    
+
+<div class="container">
+  <div class="shopProduct">
+    <div class="rightShop">
+      <div class="productCategoriesShop" style="width: 34%;">
+
+        <div class="form-check" >
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Beverages
+            <i class="fa-light fa-plus plus-icon" style="margin-left: 200px"></i>
+            <div class="nested-checkboxes">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Coffee
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Craft Beer
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Drink Boxes & Pouches
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Milk & Plant- Based Milk
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Soda & Pop
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sparkling Water
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Tea & Kombucha
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Water
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Wine
+                </label>
+              </div>
+              <!-- Add more nested checkboxes here as needed -->
+            </div>
+          </label>
+        </div>
+        
+        
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Biscuits & Snacks
+            
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Breads & Bakery
+            <i class="fa-light fa-plus plus-icon" style="margin-left: 155px"></i>
+            <div class="nested-checkboxes">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Buns & Rolls
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Cakes & Cupcakes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Cookies & Brownies
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Donuts & Muffins
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Order Speciality Cakes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Packaged Breads
+                </label>
+              </div>
+
+            
+              <!-- Add more nested checkboxes here as needed -->
+            </div>
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Breakfast & Dairy
+            <i class="fa-light fa-plus plus-icon" style="margin-left: 148px" ></i>
+            <div class="nested-checkboxes">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Butter & Margarine
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Cheese
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Eggs Substitutes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Honey
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Marmalades
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Milk & Flavoured Milk
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sour Cream & Dips
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Yogurt
+                </label>
+              </div>
+              <!-- Add more nested checkboxes here as needed -->
+            </div>
+          </label>
+        </div>
+       
+       
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Frozen Foods
+            
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Fruits & Vegetables
+            <i class="fa-light fa-plus plus-icon"style="margin-left: 135px" ></i>
+            <div class="nested-checkboxes">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Herbs & Seasonings
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Packaged Produce
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Party Trays
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Cuts & Sprouts
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Exotic Fruits & Veggies
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Fresh Fruits
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Fresh Vegetables
+                </label>
+              </div>
+              <!-- Add more nested checkboxes here as needed -->
+            </div>
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Grocery & Staples
+            
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Household Needs
+            
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Meats & Seafood
+            <i class="fa-light fa-plus plus-icon" style="margin-left: 15px"></i>
+            <div class="nested-checkboxes">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Shrimp
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sliced Deli Meat
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Wild Caught Fillets
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Beef
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Breakfast Sausage
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Chicken
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Crab & Shellfish
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Dinner Sausage
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Farm Raised Fillets
+                </label>
+              </div>
+              
+            </div>
+          </label>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</label>
+</div>
+
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+<label class="form-check-label" for="flexCheckDefault">
+  Biscuits & Snacks
+  
+</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+<label class="form-check-label" for="flexCheckDefault">
+  Breads & Bakery
+  <i class="fa-light fa-plus plus-icon" style="margin-left: 155px"></i>
+  <div class="nested-checkboxes">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Buns & Rolls
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Cakes & Cupcakes
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Cookies & Brownies
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Donuts & Muffins
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Order Speciality Cakes
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Packaged Breads
+      </label>
+    </div>
+
+  
+    <!-- Add more nested checkboxes here as needed -->
+  </div>
+</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+<label class="form-check-label" for="flexCheckDefault">
+  Breakfast & Dairy
+  <i class="fa-light fa-plus plus-icon" style="margin-left: 148px" ></i>
+  <div class="nested-checkboxes">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Butter & Margarine
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Cheese
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Eggs Substitutes
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Honey
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Marmalades
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Milk & Flavoured Milk
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Sour Cream & Dips
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Yogurt
+      </label>
+    </div>
+    <!-- Add more nested checkboxes here as needed -->
+  </div>
+</label>
+</div>
+
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+<label class="form-check-label" for="flexCheckDefault">
+  Frozen Foods
+  
+</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+<label class="form-check-label" for="flexCheckDefault">
+  Fruits & Vegetables
+  <i class="fa-light fa-plus plus-icon"style="margin-left: 135px" ></i>
+  <div class="nested-checkboxes">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Herbs & Seasonings
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Packaged Produce
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Party Trays
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Cuts & Sprouts
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Exotic Fruits & Veggies
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Fresh Fruits
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Fresh Vegetables
+      </label>
+    </div>
+    <!-- Add more nested checkboxes here as needed -->
+  </div>
+</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+<label class="form-check-label" for="flexCheckDefault">
+  Grocery & Staples
+  
+</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+<label class="form-check-label" for="flexCheckDefault">
+  Household Needs
+  
+</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+<label class="form-check-label" for="flexCheckDefault">
+  Meats & Seafood
+  <i class="fa-light fa-plus plus-icon" style="margin-left: 145px"></i>
+  <div class="nested-checkboxes">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Shrimp
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Sliced Deli Meat
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Wild Caught Fillets
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Beef
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Breakfast Sausage
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Chicken
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Crab & Shellfish
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Dinner Sausage
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Farm Raised Fillets
+      </label>
+    </div>
+    
+  </div>
+</label>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    
 
 
 </body>
 
 <script>
 
-
+ // Add event listener to plus icons
+ var plusIcons = document.querySelectorAll('.plus-icon');
+  plusIcons.forEach(function(icon) {
+    icon.addEventListener('click', function() {
+      this.parentNode.querySelector('.nested-checkboxes').classList.toggle('show');
+    });
+  });
 
 </script>
 

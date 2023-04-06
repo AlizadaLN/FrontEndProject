@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.1/nouislider.min.css" />
+    <link rel="stylesheet" href="./slick-1.8.1 (2)/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1 (2)/slick-1.8.1/slick/slick-theme.css">
+
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ShopPage</title>
+</head>
+
+<body>
+    <section class="shopPage"></section>
+    <div class="shopPage">
+
+
+        <div class="header">
+            <div class="blueRow">
+                <a href=""></a>
+
+            </div>
+            <div class="container">
+                <div class="firstRow">
+                    <div class="navBar navBarNewWidth">
+
+                        <div class="topnav" id="myTopnav">
+                            <a href="#home" class="active">About Us</a>
+                            <a href="#news">My Account</a>
+                            <a href="#contact">Wishlist</a>
+                            <a href="#about">Order Tracking</a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="topbar-notice">
+
+                        <p><i class="fa-regular fa-hand"></i>100% Secure delivery without contacting the courier</p>
+
+                    </div>
+
+                    <div class="text-content">
+                        Need help? Call Us: <a href="tel:0020500"><strong style="color: #2bbef9">+ 0020 500</strong></a>
+                    </div>
+
+
+                    <div style="display: flex; justify-content: end; padding-left: 50px;" class="language">
+                        <div class="input-group mb-3">
+                            <select style="font-size: 12px; border: none;" class="form-select" id="inputGroupSelect01">
+                                <option selected>English</option>
+                                <option value="1">Spanish</option>
+                                <option value="2">German</option>
+                            </select>
+                        </div>
+                        <div style="padding-left: 30px;" class="input-group mb-3">
+                            <select style="font-size: 12px; border: none;" class="form-select" id="inputGroupSelect01">
+                                <option selected>USD</option>
+                                <option value="1">INR</option>
+                                <option value="2">GBP</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container bacola">
+
+                <nav class="navbar navbar-light ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <div class="img col-2">
+                                <img src="./img/bacola-logo.png" alt="" style="width: 140px;">
+                                <p style="font-size: 10px;">Online Grocery Shopping Center</p>
+                            </div>
+                        </a>
+                        <a class="navbar-brand" href="#">
+                            <div class="modalLocation col-2">
+                            </div>
+                        </a>
+                        <a class="navbar-brand" href="#">
+                            <nav class="navbar navbar-light searchBar col-5 ">
+                                <div class="container-fluid">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="search"
+                                            placeholder="Search for products..." aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit"><i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                                    </form>
+                                </div>
+                            </nav>
+                        </a>
+
+
+                        <a class="navbar-brand" href="#">
+
+                            <div class="icons col-3">
+                                <div class="signIn"><i class="fa-regular fa-user"></i></div>
+                                <div class="total">
+                                    <p>$0.00</p>
+                                </div>
+                                <div class="basket"><i class="fa-solid fa-basket-shopping"></i><sup
+                                        id="basketCount">0</sup></div>
+
+                            </div>
+
+
+                        </a>
+
+
+                    </div>
+                </nav>
+
+            </div>
+            <div class="container mainMenu">
+                <div class="allCategories">
+                    <nav class="navbar navbar-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#">All Categories</a>
+                        </div>
+                    </nav>
+                </div>
+                <ul class="nav nav-pills leftMainMenu">
+                    <li class="nav-item home">
+                        <a class="nav-link toggle" data-bs-toggle="home" href="#" role="button"
+                            aria-expanded="false">HOME<i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="home-menu div flex-column">
+                            <li><a class="home-item" href="#">Home 1</a></li>
+                            <li><a class="home-item" href="#">Home 2</a></li>
+                            <li><a class="home-item" href="#">Home 3</a></li>
+                            <li><a class="home-item" href="#">Home 4</a></li>
+                            <li><a class="home-item" href="#">Home 5</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item shop">
+                        <a class="nav-link toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+                        <div class="div">
+                            <ul class="shop-menu">
+                                <li><a class="shop-item" href="#">Shop Lists</a></li>
+                                <ul class="shopList-menu">
+                                    <li><a class="shopLists-item" href="#">Shop Default</a></li>
+                                    <li><a class="shopLists-item" href="#">Shop Right Sidebar</a></li>
+                                    <li><a class="shopLists-item" href="#">Shop Wide</a></li>
+                                    <li><a class="shopLists-item" href="#">List Left Sidebar</a></li>
+                                    <li><a class="shopLists-item" href="#">Load More Button</a></li>
+                                    <li><a class="shopLists-item" href="#">Infinite Scrolling</a></li>
+                                </ul>
+                            </ul>
+
+                            <ul class="shop-menu">
+                                <li><a class="shop-item" href="#">Product Detail</a></li>
+                                <ul class="productDetail-menu">
+                                    <li><a class="productDetail-item" href="#">Product Default</a></li>
+                                    <li><a class="productDetail-item" href="#">Product Variable</a></li>
+                                    <li><a class="productDetail-item" href="#">Product Grouped</a></li>
+                                    <li><a class="productDetail-item" href="#">Product External</a></li>
+                                    <li><a class="productDetail-item" href="#">Product Downloadable</a></li>
+                                    <li><a class="productDetail-item" href="#">Product With Video</a></li>
+                                </ul>
+                            </ul>
+
+                            <ul class="shop-menu">
+                                <li><a class="shop-item" href="#">Product Types</a></li>
+                                <ul class="productTypes-menu">
+                                    <li><a class="productTypes-item" href="#">Single Type 1</a></li>
+                                    <li><a class="productTypes-item" href="#">Single Type 2</a></li>
+                                    <li><a class="productTypes-item" href="#">Single Type 3</a></li>
+                                    <li><a class="productTypes-item" href="#">Single Type 4</a></li>
+                                    <li><a class="productTypes-item" href="#">Thumbnails Left</a></li>
+                                    <li><a class="productTypes-item" href="#">Zoom Image</a></li>
+                                </ul>
+                            </ul>
+
+                            <ul class="shop-menu">
+                                <li><a class="shop-item" href="#">Shop Pages</a></li>
+                                <ul class="shopPages-menu">
+                                    <li><a class="shopPages-item" href="#">Cart</a></li>
+                                    <li><a class="shopPages-item" href="#">Checkout</a></li>
+                                    <li><a class="shopPages-item" href="#">My account</a></li>
+                                    <li><a class="shopPages-item" href="#">Wishlist</a></li>
+                                    <li><a class="shopPages-item" href="#">Order Tracking</a></li>
+                                    <li><a class="shopPages-item" href="#">Order on WhatsApp</a></li>
+                                </ul>
+                            </ul>
+
+                            <ul class="shop-menu">
+                                <li><a class="shop-item" href="#">Shop Layouts</a></li>
+                                <ul class="shopLayouts-menu">
+                                    <li><a class="shopLayouts-item" href="#">Two Columns</a></li>
+                                    <li><a class="shopLayouts-item" href="#">Three Columns</a></li>
+                                    <li><a class="shopLayouts-item" href="#">Three Columns Wide</a></li>
+                                    <li><a class="shopLayouts-item" href="#">Four Columns</a></li>
+                                    <li><a class="shopLayouts-item" href="#">Four Columns Wide</a></li>
+                                    <li><a class="shopLayouts-item" href="#">Five Columns wide</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggle" href="#"><i class="fa-solid fa-fish-fins"></i>MEATS & SEAFOOD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggle" href="#" aria-disabled="true"><i
+                                class="fa-solid fa-cake-candles"></i>BAKERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggle" href="#" aria-disabled="true"><i
+                                class="fa-solid fa-mug-hot"></i>BEVERAGES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggle" href="#" aria-disabled="true">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggle"
+                            href="file:///C:/Users/user/Desktop/JAVASCRIPT/FrontEndProject/assets/contact.html?"
+                            aria-disabled="true">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="container" style="height: 2000px;">
+            <div class="accountText">
+                <a href="file:///C:/Users/user/Desktop/JAVASCRIPT/FrontEndProject/assets/index.html">
+                    <h6>Home</h6>
+                </a>
+                <i style="font-size: 15px; margin-top: 15px;" class="fa-solid fa-chevron-right"></i>
+                <a href="">
+                    <h6>My Account</h6>
+                </a>
+
+            </div>
+
+            <div class="shopProduct">
+
+
+                <div class="rightShop">
+                    <div class="textShopCategories">
+                        <h6>PRODUCT CATEGORIES</h6>
+                    </div>
+                    <div class="productCategoriesShop">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Beverages
+                                <i class="fa-light fa-plus plus-icon" style="margin-left: 200px"></i>
+                                <div class="nested-checkboxes">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Coffee
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Craft Beer
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Drink Boxes & Pouches
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Milk & Plant- Based Milk
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Soda & Pop
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Sparkling Water
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Tea & Kombucha
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Water
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Wine
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                            </label>
+                        </div>
+
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Biscuits & Snacks
+
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Breads & Bakery
+                                <i class="fa-light fa-plus plus-icon" style="margin-left: 155px"></i>
+                                <div class="nested-checkboxes">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Buns & Rolls
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Cakes & Cupcakes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Cookies & Brownies
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Donuts & Muffins
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Order Speciality Cakes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Packaged Breads
+                                        </label>
+                                    </div>
+
+
+                                    
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Breakfast & Dairy
+                                <i class="fa-light fa-plus plus-icon" style="margin-left: 148px"></i>
+                                <div class="nested-checkboxes">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Butter & Margarine
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Cheese
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Eggs Substitutes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Honey
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Marmalades
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Milk & Flavoured Milk
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Sour Cream & Dips
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Yogurt
+                                        </label>
+                                    </div>
+                                   
+                                </div>
+                            </label>
+                        </div>
+
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Frozen Foods
+
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Fruits & Vegetables
+                                <i class="fa-light fa-plus plus-icon" style="margin-left: 135px"></i>
+                                <div class="nested-checkboxes">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Herbs & Seasonings
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Packaged Produce
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Party Trays
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Cuts & Sprouts
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Exotic Fruits & Veggies
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fresh Fruits
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Fresh Vegetables
+                                        </label>
+                                    </div>
+                                    
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Grocery & Staples
+
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Household Needs
+
+                            </label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Meats & Seafood
+                                <i class="fa-light fa-plus plus-icon" style="margin-left: 145px"></i>
+                                <div class="nested-checkboxes">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Shrimp
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Sliced Deli Meat
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Wild Caught Fillets
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Beef
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Breakfast Sausage
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Chicken
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Crab & Shellfish
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Dinner Sausage
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Farm Raised Fillets
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="filter">
+                        <div class="textShopCategories">
+                            <h6 style="width: 200px;">FILTER BY PRICE</h6>
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider" id="priceSlider"></div>
+                            <div class="slider-handle"></div>
+                            <div class="price-range">
+                                <span id="price">Price: $0 - $70</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="productStatusShop">
+                        <h6>PRODUCT STATUS</h6>
+                        <div class="form-check checkboxForm">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                In Stock
+                            </label>
+                        </div>
+                        <div class="form-check checkboxForm">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                On Sale
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="brandsShop">
+                        <h6>BRANDS</h6>
+                        <div class="form-check checkboxForm">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Frito Lay
+                                <span style="margin-left: 205px;">(2)</span>
+                            </label>
+                        </div>
+                        <div class="form-check checkboxForm">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Nespresso
+                                <span style="margin-left: 190px;">(2)</span>
+                            </label>
+                        </div>
+                        <div class="form-check checkboxForm">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Oreo
+                                <span style="margin-left: 230px;">(7)</span>
+                            </label>
+                        </div>
+                        <div class="form-check checkboxForm">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Quaker
+                                <span style="margin-left: 213px;">(1)</span>
+                            </label>
+                        </div>
+                        <div class="form-check checkboxForm">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Welch's
+                                <span style="margin-left: 213px;">(7)</span>
+                            </label>
+                        </div>
+
+                        <div class="sideBarBanner">
+                            <img src="./img/sidebar-banner.gif" alt="">
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="leftShop">
+
+                    <div class="pictureforShop">
+                        <img src="./img/Delivered Your Home.JPG" alt="">
+                    </div>
+
+                    <div class="navShop">
+
+                        <div class="container">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                              <div class="container-fluid">
+                                <a class="navbar-brand" href="#"><i class="fa-solid fa-border-none"></i></a>
+                                <a class="navbar-brand iconsShop"   href="#"><i class="fa-solid fa-table-cells-large"></i></a>
+                                <a class="navbar-brand iconsShop"   href="#"><i class="fa-solid fa-grip-lines"></i></a>
+                                <a class="navbar-brand iconsShop" href="#"><i class="fa-solid fa-border-all"></i></a>
+                                
+
+                                <a class="navbar-brand" href="#">
+
+                                    <div style="display: flex; justify-content: end; padding-left: 50px;" class="language">
+                                        <div class="input-group mb-3">
+                                            <select style="font-size: 12px; border: none;" class="form-select" id="inputGroupSelect01">
+                                                <option selected> Sort by latest </option>
+                                                <option value="1">Sort by popularity</option>
+                                                <option value="2">Sort by average rating</option>
+                                                <option value="3">Sort by price: low to high</option>
+                                                <option value="4">Sort by price: high to low</option>
+                                            </select>
+                                        </div>
+                                        <div style="padding-left: 30px;" class="input-group mb-3">
+                                            <select style="font-size: 12px; border: none;" class="form-select" id="inputGroupSelect01">
+                                                <option selected>Show 12</option>
+                                                <option value="1">24</option>
+                                                <option value="2">36</option>
+                                                <option value="2">48</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+
+                                </a>
+
+
+
+                              </div>
+                            </nav>
+                        </div>
+
+
+                    </div>
+
+                    <div class="cardsForShop">
+
+                        <div class="rowShop d-flex" col-3>
+
+                                <div class="posRel">
+                                  <div class="card  slideHover curss abs2">
+                                    <div class="discInfo">
+                                      <h6>26%</h6>
+                                    </div>
+                                    <div class="heartMaxIcon">
+                                      <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                      <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                    </div>
+                        
+                        
+                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-346x310.jpg"
+                                      style="background-color: azure;" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h6 class="card-title" style="font-size: 12px;">Zevia Kidz Strawberry Lemonade Zero Calorie Soda</h6>
+                                      <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                      <div class="star">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                      </div>
+                                      <span><del>$7.95</del> $5.95</span><br>
+                                      <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                        
+                                    </div>
+                                  </div>
+                                </div>
+                        
+                                <div class="posRel">
+                        
+                                  <div class="card  slideHover curss abs2" style="margin-left: 220px;" >
+                                    <div class="discInfo">
+                                      <h6>40%</h6>
+                                    </div>
+                                    <div class="heartMaxIcon">
+                                      <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                      <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                    </div>
+                        
+                        
+                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-2-346x310.jpg"
+                                      class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h6 class="card-title" style="font-size: 12px;">Wheat Thins Original Crackers</h6>
+                                      <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                      <div class="star">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                      </div>
+                                      <span><del>$5.00</del> $3.00</span><br>
+                                      <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                        
+                                    </div>
+                                  </div>
+                                </div>
+                        
+                                <div class="posRel">
+                                  <div class="card  slideHover curss abs2" style="margin-left: 440px;" >
+                                    <div class="discInfo">
+                                      <h6>26%</h6>
+                                    </div>
+                                    <div class="heartMaxIcon">
+                                      <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                      <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                    </div>
+                        
+                        
+                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-3-346x310.jpg"
+                                      class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h6 class="card-title" style="font-size: 12px;">Werther’s Original Caramel Hard Candies</h6>
+                                      <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                      <div class="star">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                      </div>
+                                      <span><del>$20.00</del> $14.97</span><br>
+                                      <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                        
+                                    </div>
+                                  </div>
+                        
+                                </div>
+                        
+                                <div class="posRel">
+                        
+                                  <div class="card  slideHover curss abs2" style="margin-left: 660px;">
+                                    <div class="discInfo">
+                                      <h6>26%</h6>
+                                    </div>
+                                    <div class="heartMaxIcon">
+                                      <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                      <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                    </div>
+                        
+                        
+                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-4-346x310.jpg"
+                                      class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h6 class="card-title" style="font-size: 12px;">Warrior Blend Organic</h6>
+                                      <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                      <div class="star">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                      </div>
+                                      <span><del>$39.00</del> $29.00</span><br>
+                                      <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                        
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="posRel">
+                                    <div class="card  slideHover curss abs2">
+                                      <div class="discInfo">
+                                        <h6>26%</h6>
+                                      </div>
+                                      <div class="heartMaxIcon">
+                                        <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                      </div>
+                          
+                          
+                                      <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-346x310.jpg"
+                                        style="background-color: azure;" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h6 class="card-title" style="font-size: 12px;">Zevia Kidz Strawberry Lemonade Zero Calorie Soda</h6>
+                                        <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                        <div class="star">
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span><del>$7.95</del> $5.95</span><br>
+                                        <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                          
+                                      </div>
+                                    </div>
+                                  </div>
+                          
+                                  <div class="posRel">
+                          
+                                    <div class="card  slideHover curss abs2" style="margin-left: 220px;" >
+                                      <div class="discInfo">
+                                        <h6>40%</h6>
+                                      </div>
+                                      <div class="heartMaxIcon">
+                                        <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                      </div>
+                          
+                          
+                                      <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-2-346x310.jpg"
+                                        class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h6 class="card-title" style="font-size: 12px;">Wheat Thins Original Crackers</h6>
+                                        <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                        <div class="star">
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span><del>$5.00</del> $3.00</span><br>
+                                        <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                          
+                                      </div>
+                                    </div>
+                                  </div>
+                          
+                                  <div class="posRel">
+                                    <div class="card  slideHover curss abs2" style="margin-left: 440px;" >
+                                      <div class="discInfo">
+                                        <h6>26%</h6>
+                                      </div>
+                                      <div class="heartMaxIcon">
+                                        <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                      </div>
+                          
+                          
+                                      <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-3-346x310.jpg"
+                                        class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h6 class="card-title" style="font-size: 12px;">Werther’s Original Caramel Hard Candies</h6>
+                                        <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                        <div class="star">
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span><del>$20.00</del> $14.97</span><br>
+                                        <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                          
+                                      </div>
+                                    </div>
+                          
+                                  </div>
+                          
+                                  <div class="posRel">
+                          
+                                    <div class="card  slideHover curss abs2" style="margin-left: 660px;">
+                                      <div class="discInfo">
+                                        <h6>26%</h6>
+                                      </div>
+                                      <div class="heartMaxIcon">
+                                        <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                        <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                      </div>
+                          
+                          
+                                      <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-4-346x310.jpg"
+                                        class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h6 class="card-title" style="font-size: 12px;">Warrior Blend Organic</h6>
+                                        <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                        <div class="star">
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                          <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <span><del>$39.00</del> $29.00</span><br>
+                                        <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                          
+                                      </div>
+                                    </div>
+                                  </div>
+                        
+
+                        </div>
+
+                       
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+       
+
+    </div>
+
+</body>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="path/to/slick/slick.min.js"></script>
+<script src="./slick-1.8.1 (2)/slick-1.8.1/slick/slick.js"></script>
+<script src="./js/script.js"></script>
+
+
+
+</html>
