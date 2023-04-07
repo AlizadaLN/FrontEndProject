@@ -57,7 +57,9 @@ plusButtons.forEach(button => {
         updateLocalStorage(index, count + 1);
         updateSubtotal(index, count + 1);
         CalculateTotalPrice(JSON.parse(localStorage.getItem("basket")));
+        
     });
+    
 });
 
 minusButtons.forEach(button => {

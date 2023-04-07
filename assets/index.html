@@ -34,10 +34,10 @@
           <div class="navBar navBarNewWidth">
 
             <div class="topnav" id="myTopnav">
-              <a href="#home" class="active">About Us</a>
-              <a href="#news">My Account</a>
-              <a href="#contact">Wishlist</a>
-              <a href="#about">Order Tracking</a>
+              <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\index.html" class="active">About Us</a>
+              <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\my account.html">My Account</a>
+              <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\index.html">Wishlist</a>
+              <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\index.html">Order Tracking</a>
               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
               </a>
@@ -85,8 +85,65 @@
                     </div>
               </a>
               <a class="navbar-brand" href="#">
-                <div class="modalLocation col-2">
-                </div>
+              <div class="modalLocation col-2">
+                  <button id="locationModalTrigger" class="btn"> <span style="color: lightgrey; font-size: 12px;">Your Location</span><br> Select Location<i class="fa-solid fa-chevron-down"></i></button>
+              
+              
+                  <div id="locationModal" class="modal">
+                      <div class="modal-content">
+                          <h6>Choose your Delivery Location</h6>
+                          <p style="font-size: 15px;color: lightgray;">Enter your address and we will specify the offer of your area</p>
+                          <input type="text" id="searchInput" placeholder=" Search your area">
+                          <i class="fas fa-search"></i> <br>
+                          <ul id="stateList" class="state-list" style="list-style-type: none;">
+                              <li style="display: flex;" data-value="">Select a Location <div class="minType">
+                                      <p style="font-size: 10px;">Clear all</p>
+                                  </div>
+                              </li>
+                              <li data-value="AZ">
+                                  <hr>
+                              </li>
+                              <li style="display: flex;" data-value="AL">Alabama
+                                  <div style="margin-left: 210px;" class="minType">
+                                      <p style="font-size: 10px;">min: $130</p>
+                                  </div>
+                              </li>
+              
+                              <li data-value="AZ">
+                                  <hr>
+                              </li>
+                              <li style="display: flex;" data-value="AK">Alaska
+                                  <div style="margin-left: 235px;" class="minType">
+                                      <p style="font-size: 10px;">min: $130</p>
+                                  </div>
+                              </li>
+                              <li data-value="AZ">
+                                  <hr>
+                              </li>
+                              <li style="display: flex;" data-value="AZ">Arizona
+                                  <div style="margin-left: 225px;" class="minType">
+                                      <p style="font-size: 10px;">min: $130</p>
+                                  </div>
+                              </li>
+                              <li data-value="AZ">
+                                  <hr>
+                              </li>
+                              <li style="display: flex;" data-value="AZ">California
+                                  <div style="margin-left: 210px;" class="minType">
+                                      <p style="font-size: 10px;">min: $130</p>
+                                  </div>
+                              </li>
+                              <li data-value="AZ">
+                                  <hr>
+                              </li>
+              
+              
+              
+                          </ul>
+              
+                      </div>
+                  </div>
+              </div>
               </a>
               <a class="navbar-brand" href="#">
                 <nav class="navbar navbar-light searchBar col-5 ">
@@ -125,12 +182,30 @@
      </div>
       <div class="container mainMenu">
         <div class="allCategories">
-          <nav class="navbar navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">All Categories</a>
-            </div>
-          </nav>
+         
+                  <div class="dropdown menuALLcat">
+                      <button class="btn btn-secondary dropdown-toggle categBtn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-bars"></i> ALL CATEGORIES 
+                      </button>
+
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton4">
+                        <li><a class="dropdown-item active" href="#"><i class="fa-solid fa-apple-whole"></i>Fruits & Vegetables</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-fish"></i>Meats & Seafood</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-egg"></i>Breakfast & Dairy</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-mug-hot"></i>Beverages</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bread-slice"></i></i>Breads & Bakery</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-snowflake"></i>Frozen Foods</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cake-candles"></i>Biscuits & Snacks</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-stapler"></i>Grocery & Staples</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Value of the day</a></li>
+                        <li><a class="dropdown-item" href="#">Top 100 offers</a></li>
+                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                      </ul>
+                    </div>
+          
         </div>
+        <div class="help"></div>
         <ul class="nav nav-pills leftMainMenu">
           <li class="nav-item home">
             <a class="nav-link toggle" data-bs-toggle="home" href="#" role="button" aria-expanded="false">HOME<i
@@ -138,13 +213,13 @@
             <ul class="home-menu div flex-column">
               <li><a class="home-item" href="#">Home 1</a></li>
               <li><a class="home-item" href="#">Home 2</a></li>
-              <li><a class="home-item" href="#">Home 3</a></li>
+              <li><a class="home-item" href="file:///C:/Users/user/Desktop/JAVASCRIPT/FrontEndProject/assets/index.html">Home 3</a></li>
               <li><a class="home-item" href="#">Home 4</a></li>
               <li><a class="home-item" href="#">Home 5</a></li>
             </ul>
           </li>
           <li class="nav-item shop">
-            <a class="nav-link toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">SHOP<i
+            <a class="nav-link toggle" data-bs-toggle="dropdown" href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\shop.html" role="button" aria-expanded="false">SHOP<i
                 class="fa-solid fa-chevron-down"></i></a>
             <div class="div">
               <ul class="shop-menu">
@@ -227,7 +302,8 @@
           </li>
         </ul>
       </div>
-    </div>
+   </div>
+
   
 
   <div class="container-carousel">
@@ -764,10 +840,16 @@
           class="card-img-top" alt="...">
         <div class="card-body" data-id="7">
 
-          <h6 class="card-title">Field Roast Chao Cheese Creamy Original</h6>
+          <h6 class="card-title" style="margin-top: -20px;">Field Roast Chao Cheese Creamy Original</h6>
           <p class="card-text">IN STOCK</p>
-          <i class="fa-regular fa-star"></i><br>
-          <del>$24.00</del> $<span>19.50</span><br>
+          <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <del>$24.00</del> $<span>19.50</span>
           <a href="#" class="btn btn-primary">Add to cart</a>
 
         </div>
@@ -781,9 +863,15 @@
         <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-57-346x310.jpg"
           class="card-img-top" alt="...">
         <div class="card-body" data-id="8">
-          <h6 class="card-title">Fresh Organic Broccoli Crowns</h6>
+          <h6 class="card-title" style="margin-top: -20px;">Fresh Organic Broccoli Crowns</h6>
           <p class="card-text">IN STOCK</p>
-          <i class="fa-regular fa-star"></i><br>
+          <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
           <del>$6.77</del> $<span>4.85</span><br>
           <a href="#" class="btn btn-primary">Add to cart</a>
 
@@ -798,9 +886,15 @@
         <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-59-346x310.jpg"
           class="card-img-top" alt="...">
         <div class="card-body" data-id="9">
-          <h6 class="card-title">Blue Diamond Almonds Lightly Salted</h6>
+          <h6 class="card-title" style="margin-top: -20px;">Blue Diamond Almonds Lightly Salted</h6>
           <p class="card-text">IN STOCK</p>
-          <i class="fa-regular fa-star"></i><br>
+          <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
           <del>$11.68</del> $<span>10.58</span><br>
           <a href="#" class="btn btn-primary">Add to cart</a>
 
@@ -814,9 +908,15 @@
         <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-48-346x310.jpg"
           class="card-img-top" alt="...">
         <div class="card-body" data-id="10">
-          <h6 class="card-title">Encore Seafoods Stuffed Alaskan Salmon</h6>
+          <h6 class="card-title" >Encore Seafoods Stuffed Alaskan Salmon</h6>
           <p class="card-text">IN STOCK</p>
-          <i class="fa-regular fa-star"></i><br>
+          <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
           <del>$32.49</del> $<span>27.49</span><br>
           <a href="#" class="btn btn-primary">Add to cart</a>
 
@@ -832,9 +932,15 @@
         <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-50-346x310.jpg"
           class="card-img-top" alt="...">
         <div class="card-body" data-id="11">
-          <h6 class="card-title">Chobani Complete Vanilla Greek Yogurt</h6>
+          <h6 class="card-title" style="margin-top: -20px;">Chobani Complete Vanilla Greek Yogurt</h6>
           <p class="card-text">IN STOCK</p>
-          <i class="fa-regular fa-star"></i><br>
+          <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
           <del>$9.35</del> $<span>7.25</span><br>
           <a href="#" class="btn btn-primary">Add to cart</a>
 
@@ -850,7 +956,13 @@
         <div class="card-body" data-id="12">
           <h6 class="card-title">USDA Choice Angus Beef Stew Meat</h6>
           <p class="card-text">IN STOCK</p>
-          <i class="fa-regular fa-star"></i><br>
+          <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
           <del>$79.99</del> $<span>49.99</span><br>
           <a href="#" class="btn btn-primary" style="background-color: #fcb900;">Add to cart</a>
 
@@ -869,7 +981,13 @@
         <div class="card-body" data-id="13">
           <h6 class="card-title">All Natural Italian-Style Chicken Meatballs</h6>
           <p class="card-text">IN STOCK</p>
-          <i class="fa-regular fa-star"></i><br>
+          <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
           <del>$9.35</del> $<span>7.25</span><br>
           <a href="#" class="btn btn-primary">Add to cart</a>
 
@@ -887,7 +1005,13 @@
         <div class="card-body" data-id="14">
           <h6 class="card-title">Angie’s Boomchickapop Sweet & Salty Kettle Corn</h6>
           <p class="card-text">IN STOCK</p>
-          <i class="fa-regular fa-star"></i><br>
+          <div class="star">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
           <del>$4.29</del> $<span>3.29</span><br>
           <a href="#" class="btn btn-primary">Add to cart</a>
 
