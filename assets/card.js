@@ -1,9 +1,14 @@
 let table = document.querySelector(".table");
+let container=document.querySelector(".container")
 let totalPrice = document.querySelector("#totalPrice");
+let totalPriceElement = document.querySelector("#totalPrice");
+
 
 if (localStorage.getItem("basket") != null) {
 
     let arr = JSON.parse(localStorage.getItem("basket"));
+
+    container.classList.remove("d-none");
 
     table.classList.remove("d-none");
 
@@ -23,14 +28,21 @@ if (localStorage.getItem("basket") != null) {
                 </div>
             </td>
             <td>${product.subtotal}</td>
-            <td data-index="${product.index}"><button><i class="fa-solid fa-trash"></i></button></td>
+            <td data-index="${product.index}"><button><i class="fa-solid fa-x"></i></button></td>
         `;
         table.appendChild(tr);
     });
 
     CalculateTotalPrice(arr);
 
+    container.style.display = 'block';
+   } 
+   else {
+    
+    container.style.display = 'none';
 }
+
+
 
 let plusButtons = document.querySelectorAll('.plus-button');
 let minusButtons = document.querySelectorAll('.minus-button');
@@ -43,6 +55,7 @@ plusButtons.forEach(button => {
         let count = parseInt(quantityValue.innerText);
         quantityValue.innerText = count + 1;
         updateLocalStorage(index, count + 1);
+        updateSubtotal(index, count + 1);
         CalculateTotalPrice(JSON.parse(localStorage.getItem("basket")));
     });
 });
@@ -55,6 +68,7 @@ minusButtons.forEach(button => {
         if (count > 1) {
             quantityValue.innerText = count - 1;
             updateLocalStorage(index, count - 1);
+            updateSubtotal(index, count - 1);
             CalculateTotalPrice(JSON.parse(localStorage.getItem("basket")));
         }
     });
@@ -83,13 +97,32 @@ function removeFromLocalStorage(index) {
     localStorage.setItem("basket", JSON.stringify(arr));
 }
 
-function CalculateTotalPrice(arr){
-    let sum=arr.reduce((prev,next)=>{
-        return prev+next.price*next.count;
-    },0);
-    console.log(sum);
+function updateSubtotal(index, count) {
+    let arr = JSON.parse(localStorage.getItem("basket"));
+    let product = arr[index];
+    product.subtotal = product.price * count;
+    
+    document.querySelector(`tr[data-index="${index}"] td:nth-child(5)`).innerText = product.subtotal; // Fixed variable name to match
 }
 
-if(localStorage.getItem("basket")!=null){
+function CalculateTotalPrice(arr) {
+    let total = arr.reduce((prev, next) => {
+        return prev + next.price * next.count;
+    }, 0);
+    totalPriceElement.innerText = total;
+    console.log(total);
+    
+}
+
+if (localStorage.getItem("basket") != null) {
     CalculateTotalPrice(JSON.parse(localStorage.getItem("basket")));
 }
+
+
+let removeAllButton = document.getElementById("removeAllButton");
+removeAllButton.addEventListener("click", function(e){
+    e.preventDefault();
+    localStorage.removeItem("basket"); 
+    basketCount.innerText = 0; 
+});
+
