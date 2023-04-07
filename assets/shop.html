@@ -232,7 +232,7 @@
 
 
 
-        <div class="container" style="height: 2000px;">
+        <div class="container">
             <div class="accountText">
                 <a href="file:///C:/Users/user/Desktop/JAVASCRIPT/FrontEndProject/assets/index.html">
                     <h6>Home</h6>
@@ -583,15 +583,24 @@
 
                     <div class="filter">
                         <div class="textShopCategories">
-                            <h6 style="width: 200px;">FILTER BY PRICE</h6>
+                            <h6 style="width: 200px; margin-bottom: 20px;">FILTER BY PRICE</h6>
                         </div>
-                        <div class="slider-container">
-                            <div class="slider" id="priceSlider"></div>
-                            <div class="slider-handle"></div>
-                            <div class="price-range">
-                                <span id="price">Price: $0 - $70</span>
+                        
+                        <div class="range" style="width: 300px;">
+                            <div class="range-slider">
+                              <span class="range-selected"></span>
                             </div>
-                        </div>
+                            <div class="range-input">
+                              <input type="range" class="min" min="0" max="70" value="0" step="10">
+                              <input type="range" class="max" min="0" max="70" value="70" step="10">
+                            </div>
+                            <div class="range-price">      
+                                <div class="price-range">
+                                    <span id="price">Price: $0 - $70</span>
+                                    <span style="margin-left: 150px;">Filter</span>
+                                </div>
+                            </div>
+                        </div> 
 
                     </div>
 
@@ -710,261 +719,400 @@
 
                     </div>
 
+                    
+
                     <div class="cardsForShop">
 
-                        <div class="rowShop d-flex" col-3>
-
-                                <div class="posRel">
-                                  <div class="card  slideHover curss abs2">
-                                    <div class="discInfo">
-                                      <h6>26%</h6>
-                                    </div>
-                                    <div class="heartMaxIcon">
-                                      <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
-                                      <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                                    </div>
-                        
-                        
-                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-346x310.jpg"
-                                      style="background-color: azure;" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title" style="font-size: 12px;">Zevia Kidz Strawberry Lemonade Zero Calorie Soda</h6>
-                                      <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
-                                      <div class="star">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                      </div>
-                                      <span><del>$7.95</del> $5.95</span><br>
-                                      <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
-                        
-                                    </div>
-                                  </div>
+                        <div class="firstRow d-flex ">
+                          <div class="shopProduct">
+                            <div class="card  slideHover curss abs2">
+                              <div class="discInfo">
+                                <h6>26%</h6>
+                              </div>
+                              <div class="heartMaxIcon">
+                                <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                              </div>
+                
+                
+                              <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-346x310.jpg"
+                                style="background-color: azure;" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title" style="font-size: 12px;">Zevia Kidz Strawberry Lemonade Zero Calorie Soda</h6>
+                                <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                <div class="star">
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
                                 </div>
-                        
-                                <div class="posRel">
-                        
-                                  <div class="card  slideHover curss abs2" style="margin-left: 220px;" >
-                                    <div class="discInfo">
-                                      <h6>40%</h6>
-                                    </div>
-                                    <div class="heartMaxIcon">
-                                      <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
-                                      <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                                    </div>
-                        
-                        
-                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-2-346x310.jpg"
-                                      class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title" style="font-size: 12px;">Wheat Thins Original Crackers</h6>
-                                      <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
-                                      <div class="star">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                      </div>
-                                      <span><del>$5.00</del> $3.00</span><br>
-                                      <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
-                        
-                                    </div>
-                                  </div>
+                                <span><del>$7.95</del> $5.95</span><br>
+                                <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="shopProduct">
+                
+                            <div class="card  slideHover curss abs2">
+                              <div class="discInfo">
+                                <h6>40%</h6>
+                              </div>
+                              <div class="heartMaxIcon">
+                                <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                              </div>
+                
+                
+                              <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-2-346x310.jpg"
+                                class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title" style="font-size: 12px;">Wheat Thins Original Crackers</h6>
+                                <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                <div class="star">
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
                                 </div>
-                        
-                                <div class="posRel">
-                                  <div class="card  slideHover curss abs2" style="margin-left: 440px;" >
-                                    <div class="discInfo">
-                                      <h6>26%</h6>
-                                    </div>
-                                    <div class="heartMaxIcon">
-                                      <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
-                                      <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                                    </div>
-                        
-                        
-                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-3-346x310.jpg"
-                                      class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title" style="font-size: 12px;">Werther’s Original Caramel Hard Candies</h6>
-                                      <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
-                                      <div class="star">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                      </div>
-                                      <span><del>$20.00</del> $14.97</span><br>
-                                      <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
-                        
-                                    </div>
-                                  </div>
-                        
+                                <span><del>$5.00</del> $3.00</span><br>
+                                <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="shopProduct">
+                            <div class="card  slideHover curss abs2">
+                              <div class="discInfo">
+                                <h6>26%</h6>
+                              </div>
+                              <div class="heartMaxIcon">
+                                <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                              </div>
+                
+                
+                              <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-3-346x310.jpg"
+                                class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title" style="font-size: 12px;">Werther’s Original Caramel Hard Candies</h6>
+                                <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                <div class="star">
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
                                 </div>
-                        
-                                <div class="posRel">
-                        
-                                  <div class="card  slideHover curss abs2" style="margin-left: 660px;">
-                                    <div class="discInfo">
-                                      <h6>26%</h6>
-                                    </div>
-                                    <div class="heartMaxIcon">
-                                      <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
-                                      <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                                    </div>
-                        
-                        
-                                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-4-346x310.jpg"
-                                      class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h6 class="card-title" style="font-size: 12px;">Warrior Blend Organic</h6>
-                                      <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
-                                      <div class="star">
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                        <i class="fa-regular fa-star"></i>
-                                      </div>
-                                      <span><del>$39.00</del> $29.00</span><br>
-                                      <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
-                        
-                                    </div>
-                                  </div>
+                                <span><del>$20.00</del> $14.97</span><br>
+                                <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                
+                              </div>
+                            </div>
+                
+                          </div>
+                
+                          <div class="shopProduct">
+                            <div class="card  slideHover curss abs2">
+                              <div class="discInfo">
+                                <h6>26%</h6>
+                              </div>
+                              <div class="heartMaxIcon">
+                                <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                              </div>
+                
+                
+                              <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-3-346x310.jpg"
+                                class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title" style="font-size: 12px;">Werther’s Original Caramel Hard Candies</h6>
+                                <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                <div class="star">
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
                                 </div>
-
-                                <div class="posRel">
-                                    <div class="card  slideHover curss abs2">
-                                      <div class="discInfo">
-                                        <h6>26%</h6>
-                                      </div>
-                                      <div class="heartMaxIcon">
-                                        <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
-                                        <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                                      </div>
-                          
-                          
-                                      <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-346x310.jpg"
-                                        style="background-color: azure;" class="card-img-top" alt="...">
-                                      <div class="card-body">
-                                        <h6 class="card-title" style="font-size: 12px;">Zevia Kidz Strawberry Lemonade Zero Calorie Soda</h6>
-                                        <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
-                                        <div class="star">
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <span><del>$7.95</del> $5.95</span><br>
-                                        <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
-                          
-                                      </div>
-                                    </div>
-                                  </div>
-                          
-                                  <div class="posRel">
-                          
-                                    <div class="card  slideHover curss abs2" style="margin-left: 220px;" >
-                                      <div class="discInfo">
-                                        <h6>40%</h6>
-                                      </div>
-                                      <div class="heartMaxIcon">
-                                        <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
-                                        <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                                      </div>
-                          
-                          
-                                      <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-2-346x310.jpg"
-                                        class="card-img-top" alt="...">
-                                      <div class="card-body">
-                                        <h6 class="card-title" style="font-size: 12px;">Wheat Thins Original Crackers</h6>
-                                        <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
-                                        <div class="star">
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <span><del>$5.00</del> $3.00</span><br>
-                                        <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
-                          
-                                      </div>
-                                    </div>
-                                  </div>
-                          
-                                  <div class="posRel">
-                                    <div class="card  slideHover curss abs2" style="margin-left: 440px;" >
-                                      <div class="discInfo">
-                                        <h6>26%</h6>
-                                      </div>
-                                      <div class="heartMaxIcon">
-                                        <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
-                                        <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                                      </div>
-                          
-                          
-                                      <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-3-346x310.jpg"
-                                        class="card-img-top" alt="...">
-                                      <div class="card-body">
-                                        <h6 class="card-title" style="font-size: 12px;">Werther’s Original Caramel Hard Candies</h6>
-                                        <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
-                                        <div class="star">
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <span><del>$20.00</del> $14.97</span><br>
-                                        <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
-                          
-                                      </div>
-                                    </div>
-                          
-                                  </div>
-                          
-                                  <div class="posRel">
-                          
-                                    <div class="card  slideHover curss abs2" style="margin-left: 660px;">
-                                      <div class="discInfo">
-                                        <h6>26%</h6>
-                                      </div>
-                                      <div class="heartMaxIcon">
-                                        <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
-                                        <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                                      </div>
-                          
-                          
-                                      <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-4-346x310.jpg"
-                                        class="card-img-top" alt="...">
-                                      <div class="card-body">
-                                        <h6 class="card-title" style="font-size: 12px;">Warrior Blend Organic</h6>
-                                        <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
-                                        <div class="star">
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                          <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <span><del>$39.00</del> $29.00</span><br>
-                                        <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
-                          
-                                      </div>
-                                    </div>
-                                  </div>
-                        
-
+                                <span><del>$20.00</del> $14.97</span><br>
+                                <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                
+                              </div>
+                            </div>
+                
+                          </div>
+                
+                
                         </div>
-
                        
-                    </div>
+                       
+                        <div class="secondRow">
+                
+                          <div class="shopProduct">
+                
+                            <div class="card  slideHover curss abs1">
+                              <div class="discInfo">
+                                <h6>14%</h6>
+                              </div>
+                              <div class="heartMaxIcon">
+                                <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                              </div>
+                
+                
+                              <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-7-346x310.jpg"
+                                class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title" style="font-size: 12px;">USDA Choice Angus Beef Stew Meat</h6>
+                                <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                <div class="star">
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span><del>$79.00</del> $49.99</span><br>
+                                <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="shopProduct">
+                
+                            <div class="card  slideHover curss abs1">
+                              <div class="discInfo">
+                                <h6>14%</h6>
+                              </div>
+                              <div class="heartMaxIcon">
+                                <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                              </div>
+                
+                
+                              <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-9-346x310.jpg"
+                                class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title" style="font-size: 12px;">Tropicana Pineapple Mango Drink</h6>
+                                <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                <div class="star">
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span><del>$3.29</del> $2.29</span><br>
+                                <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="shopProduct">
+                
+                            <div class="card  slideHover curss abs1">
+                              <div class="discInfo">
+                                <h6>14%</h6>
+                              </div>
+                              <div class="heartMaxIcon">
+                                <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                              </div>
+                
+                
+                              <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-11-346x310.jpg"
+                                class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title" style="font-size: 12px;">Organic Sweet Lime</h6>
+                                <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                <div class="star">
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span><del>$6.99</del> $5.99</span><br>
+                                <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                
+                              </div>
+                            </div>
+                          </div>
+                
+                          <div class="shopProduct">
+                
+                            <div class="card  slideHover curss abs1">
+                              <div class="discInfo">
+                                <h6>14%</h6>
+                              </div>
+                              <div class="heartMaxIcon">
+                                <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                              </div>
+                
+                
+                              <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-11-346x310.jpg"
+                                class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h6 class="card-title" style="font-size: 12px;">Organic Sweet Lime</h6>
+                                <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                <div class="star">
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                  <i class="fa-regular fa-star"></i>
+                                </div>
+                                <span><del>$6.99</del> $5.99</span><br>
+                                <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                
+                              </div>
+                            </div>
+                          </div>
+                
+                
+                        </div>
+                
+                        <div class="thirdRow">
+                
+                            <div class="shopProduct">
+                  
+                              <div class="card  slideHover curss abs1">
+                                <div class="discInfo">
+                                  <h6>14%</h6>
+                                </div>
+                                <div class="heartMaxIcon">
+                                  <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                  
+                  
+                                <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-7-346x310.jpg"
+                                  class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h6 class="card-title" style="font-size: 12px;">USDA Choice Angus Beef Stew Meat</h6>
+                                  <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                  <div class="star">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                  </div>
+                                  <span><del>$79.00</del> $49.99</span><br>
+                                  <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                  
+                                </div>
+                              </div>
+                            </div>
+                  
+                            <div class="shopProduct">
+                  
+                              <div class="card  slideHover curss abs1">
+                                <div class="discInfo">
+                                  <h6>14%</h6>
+                                </div>
+                                <div class="heartMaxIcon">
+                                  <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                  
+                  
+                                <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-9-346x310.jpg"
+                                  class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h6 class="card-title" style="font-size: 12px;">Tropicana Pineapple Mango Drink</h6>
+                                  <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                  <div class="star">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                  </div>
+                                  <span><del>$3.29</del> $2.29</span><br>
+                                  <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                  
+                                </div>
+                              </div>
+                            </div>
+                  
+                            <div class="shopProduct">
+                  
+                              <div class="card  slideHover curss abs1">
+                                <div class="discInfo">
+                                  <h6>14%</h6>
+                                </div>
+                                <div class="heartMaxIcon">
+                                  <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                  
+                  
+                                <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-11-346x310.jpg"
+                                  class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h6 class="card-title" style="font-size: 12px;">Organic Sweet Lime</h6>
+                                  <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                  <div class="star">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                  </div>
+                                  <span><del>$6.99</del> $5.99</span><br>
+                                  <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                  
+                                </div>
+                              </div>
+                            </div>
+                  
+                            <div class="shopProduct">
+                  
+                              <div class="card  slideHover curss abs1">
+                                <div class="discInfo">
+                                  <h6>14%</h6>
+                                </div>
+                                <div class="heartMaxIcon">
+                                  <div class="maximize"><i class="fa-solid fa-maximize"></i></div>
+                                  <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                                </div>
+                  
+                  
+                                <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/product-image-11-346x310.jpg"
+                                  class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h6 class="card-title" style="font-size: 12px;">Organic Sweet Lime</h6>
+                                  <p class="card-text" style="font-size: 12px; margin-bottom: 0;">IN STOCK</p>
+                                  <div class="star">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                  </div>
+                                  <span><del>$6.99</del> $5.99</span><br>
+                                  <a href="#" class="btn btn-primary addSlideBtn">Buy product</a>
+                  
+                                </div>
+                              </div>
+                            </div>
+                  
+                  
+                        </div>
+                       
+                
+                      </div>
+                       
+                        
 
 
 
@@ -998,7 +1146,9 @@
     crossorigin="anonymous"></script>
 <script type="text/javascript" src="path/to/slick/slick.min.js"></script>
 <script src="./slick-1.8.1 (2)/slick-1.8.1/slick/slick.js"></script>
-<script src="./js/script.js"></script>
+
+<script src="./js/shop.js"></script>
+
 
 
 

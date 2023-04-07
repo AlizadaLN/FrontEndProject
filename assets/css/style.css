@@ -187,7 +187,7 @@ body {
 }
 .signIn i{
   position: absolute;
-  right: 133px;
+  right: 113px;
   top: 7px;
 }
 
@@ -1204,22 +1204,8 @@ i {
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-.shopProduct{
-  display: flex;
-  
-  
-  margin-top: 40px;
-  
-  
-}
 
-.rightShop{
-  width: 30%;
-}
 
-.leftShop{
-  width: 60%;
-}
 
 .nested-checkboxes {
   display: none;
@@ -1239,52 +1225,6 @@ i {
 checkboxForm{
   margin-top: 20px;
 }
-
-
-
-
-
-/* filter price */
-
-.filter
-{
-  margin-top: 40px;
-  margin-right: 1000px;
-}
-.slider-container {
-  width: 300px; /* Set desired width for the slider container */
-  margin: 0 auto; /* Center align the slider container */
-}
-
-.slider {
-  width: 100%; /* Set width to 100% to fill the container */
-  height: 6px; /* Set desired height for the slider */
-  background-color: #ddd; /* Set background color for the slider */
-  border-radius: 3px; /* Set border radius for visual appearance */
-  cursor: pointer; /* Change cursor to pointer on hover for better UX */
-  position: relative; /* Set position to relative for positioning the slider handle */
-}
-
-.slider-handle {
-  width: 20px; /* Set width for the slider handle */
-  height: 20px; /* Set height for the slider handle */
-  background-color: #333; /* Set background color for the slider handle */
-  border-radius: 50%; /* Set border radius for a circular appearance */
-  position: absolute; /* Set position to absolute for positioning the handle within the slider */
-  top: -7px; /* Set top position to adjust the handle placement within the slider */
-}
-
-/* Optional: Style for price range labels */
-.price-range {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-
-
-
-
 
 
 
@@ -1308,8 +1248,113 @@ checkboxForm{
 }
 /* ////////////////////////////////////////////////////////////////////////////////// */
 
-.leftShop{
+
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+
+
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+
+/* Filter Price */
+
+
+.filter
+{
+  margin-top: 40px;
+  margin-right: 1000px;
+}
+
+
+.range-slider {
+  width: 100%;
+  height: 5px;
+  position: relative;
+  background-color: black;
+  border-radius: 2px;
+}
+.range-selected {
+  height: 30%;
   
+  position: absolute;
+  border-radius: 5px;
+  background-color:black;
+}
+
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -7px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.range-input input::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  
+  background-color: black;
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+.range-input input::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  
+  
+}
+
+.range-price {
+  margin-top: 20px;
+  margin-left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.range-price label {
+  margin-right: 5px;
+}
+.range-price input {
+  width: 200px;
+  padding: 5px;
+}
+.range-price input:first-of-type {
+  margin-right: 15px;
+}
+
+/* Filter Price */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.shopProduct{
+  display: flex;
+  
+  margin-top: 40px;
+  
+  
+}
+
+.rightShop{
+  width: 30%;
+}
+
+.leftShop{
+  width: 100%;
+  
+  border: #333 solid 0.5px;
+}
+
+
+.cardsforshop {
+  margin-top: 200px;
 }
 
 .pictureforShop img{
@@ -1319,9 +1364,9 @@ checkboxForm{
 .navShop{
 
   width: 900px;
-  height: 250px;
+  height: 200px;
   border-radius: 5px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: -20px;
 }
 
@@ -1330,23 +1375,4 @@ checkboxForm{
 }
 
 
-/* ///////////////////////////////////////////////////////////////////////// */
 
-.cardsforshop .shopCards{
-  margin-top: 10px;
-}
-
-.cardsforshop{
-  margin-top: -40px;
-}
-
-.rowShop{
-  position: absolute;
-  bottom: -480px;
-  flex-wrap: wrap;
-}
-
-secondLine{
-  position: absolute;
-  bottom: -1000px;
-}
