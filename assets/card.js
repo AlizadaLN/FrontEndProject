@@ -14,7 +14,7 @@ if (localStorage.getItem("basket") != null) {
                 <img src="${product.imgUrl}" alt="" width="150" height="150">
             </td>
             <td>${product.name}</td>
-            <td>${product.price.slice(0,product.price.length-1)}</td>
+            <td>${product.price}</td>
             <td>
                 <div class="quantity">
                     <button class="minus-button" data-index="${product.index}">-</button>
@@ -22,6 +22,7 @@ if (localStorage.getItem("basket") != null) {
                     <button class="plus-button" data-index="${product.index}">+</button>
                 </div>
             </td>
+            <td>${product.subtotal}</td>
             <td data-index="${product.index}"><button><i class="fa-solid fa-trash"></i></button></td>
         `;
         table.appendChild(tr);
@@ -84,7 +85,7 @@ function removeFromLocalStorage(index) {
 
 function CalculateTotalPrice(arr){
     let sum=arr.reduce((prev,next)=>{
-        return prev+next.price.slice(0,next.price.length-1)*next.count;
+        return prev+next.price*next.count;
     },0);
     console.log(sum);
 }

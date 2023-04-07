@@ -20,6 +20,7 @@ allButtons.forEach(btn=>{
                 imgUrl: btn.parentNode.parentNode.querySelector('.card-img-top').getAttribute("src"),
                 name: btn.parentNode.querySelector('.card-title').innerText,
                 price: btn.parentNode.querySelector('span').innerText,
+                subtotal: parseFloat(btn.parentNode.querySelector('span').innerText),
                 count: 1,
                 
             
@@ -27,6 +28,7 @@ allButtons.forEach(btn=>{
         }
         else{
             existProduct.count++;
+            existProduct.subtotal = existProduct.count * existProduct.price;
         }
         calculatedBasketCount();
         
