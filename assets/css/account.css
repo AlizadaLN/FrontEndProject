@@ -1,0 +1,104 @@
+
+.accountMain {
+    width: 95%;
+    height: 700px;
+  
+  }
+  
+  .accountText {
+    width: 95%;
+    border-top: lightgray solid 0.5px;
+    margin-left: -15px;
+  
+    display: flex;
+    font-size: 5px;
+    color: grey;
+  
+  }
+  
+  .accountText a {
+    margin-top: 10px;
+    color: gray;
+  
+  }
+  
+  .accountText a :hover {
+    color: black;
+  
+  }
+  
+  .accountLoginRegister {
+    width: 50%;
+    height: 500px;
+    border: solid 0.5px lightgray;
+    margin-top: 200px;
+    justify-content: center;
+    margin-left: 25%;
+  
+  
+  }
+  
+  .textLoginRegister {
+  
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+  
+  }
+  
+  .accountInput {
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 10%;
+  }
+  
+  .accountInput input {
+    width: 85%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightgray;
+  }
+  
+  #accountLabel1 {
+    font-size: 15px;
+  }
+  
+  #accountLabel2 {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  
+  #accountSubmit {
+    width: 85%;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  #accountA {
+    position: absolute;
+    bottom: -40px;
+    color: #2bbef9;
+  }
+  
+  .checkbox {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .checkbox input {
+    margin-top: 5px;
+  }
+  
+  .checkbox label {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  
+  
+  /* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */

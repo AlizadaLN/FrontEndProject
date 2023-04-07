@@ -1,0 +1,139 @@
+/* /////////////////////////////////////////////////////////////////// */
+/* blogPage */
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .main-container-left{
+        width: 75%;
+        padding-right: 25px;
+    }
+    
+    .main-container-right{
+        width: 25%;
+        padding-left: 25px;
+    }
+    
+    .main-container-left img{
+        object-fit: cover;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .main-container-left .left-box{
+        margin-bottom: 50px;
+    }
+    
+    .box-icons{
+        color: gray;
+        margin-bottom: 10px;
+    }
+    
+    .box-icons i{
+        color: blue;
+        margin-left: 10px;
+    }
+    
+    .box-button button{
+        border: 1px solid blue;
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+        padding: 8px;
+    }
+    
+    .d-flex{
+        position: relative;
+    }
+    
+    .d-flex i{
+        position: absolute;
+        top: 12px;
+        right: 5px;
+    }
+    
+    .d-flex input{
+        background-color: rgb(236, 228, 228);
+        margin-bottom: 30px;
+    }
+    
+    .box-cont{
+        border: 1px solid rgb(237, 227, 227);
+        border-radius: 10px;
+        height: 310px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .box-inp{
+        display: flex;
+        position: relative;
+        padding: 10px;
+    }
+    
+    .box-inp img{
+        border-radius: 50%;
+        width: 80px;
+    }
+    
+    .box-inp span{
+        border: 2px solid white;
+        border-radius: 50%;
+        background-color: rgb(48, 219, 238);
+        position: absolute;
+        width: 25px;
+        text-align: center;
+        color: white;
+        right: 160px;
+    }
+    
+    .box-inp p{
+        position: absolute;
+        top: 15px;
+        left: 95px;
+    }
+    
+    .media-box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .media-box button i{
+        width: 20px;
+        margin-right: 35px;
+    }
+    
+    .media-box button{
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        color: white;
+    }
+    
+    .fa-reddit-alien{
+        color: white;
+    }
+    
+    .banner-box img{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .tags{
+        margin-top: 10px;
+    }
+    
+    .tags button{
+        border: 1px solid gray;
+        margin-bottom: 5px;
+    }
+  
+  
+    /* /////////////////////////////////////////////////////////////////// */
+  /* blogPage */
