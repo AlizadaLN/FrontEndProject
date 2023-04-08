@@ -1,3 +1,4 @@
+// let totalPriceElement = document.querySelectorAll("#totalPrice");
 
 //   Modal Location
 
@@ -54,7 +55,7 @@ allButtons.forEach(btn => {
       existProduct.subtotal = existProduct.count * existProduct.price;
     }
     calculatedBasketCount();
-
+    CalculateTotalPrice(arr);
     localStorage.setItem("basket", JSON.stringify(arr))
   })
 })
@@ -68,7 +69,15 @@ function calculatedBasketCount() {
 calculatedBasketCount();
 
 
+// function CalculateTotalPrice(arr) {
+//   totalPriceElement.forEach((totall) => {
+//       let total = arr.reduce((prev, next) => {
+//           return prev + next.price * next.count;
+//       }, 0);
+//       totall.innerText = Math.round(total);
+//   });
 
+// };
 
 
 

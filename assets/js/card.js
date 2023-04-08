@@ -53,29 +53,6 @@ else {
 
 
 
-
-
-let deleteButtons = document.querySelectorAll('td[data-index] button');
-
-// plusButtons.forEach(button => {
-//     button.addEventListener('click', () => {
-        
-//         let productCount = document.querySelector(".quantity-value").innerHTML;
-//         let countProduct = parseInt(productCount);
-//         let arr = JSON.parse(localStorage.getItem("basket"));
-//         let id = document.querySelector(".p-id").getAttribute("data-id");
-//         console.log(id);
-//         let existProduct = arr.find((p) => p.id == id)
-
-//         arr.forEach((p) => {
-//             p.count++
-//         })
-
-//     });
-// });
-
-
-
 let plusButtons = document.querySelectorAll('.plus-button');
 
 plusButtons.forEach(button => {
@@ -131,7 +108,7 @@ minusButtons.forEach(button => {
         localStorage.setItem("basket",JSON.stringify(arr));
         quantityValue.innerText = count - 1; 
         let subTotalPrice = document.querySelector(".subTotalPrice");
-        subTotalPrice.innerText = Math.round(calculateTotalPrice(arr),3) ;
+        subTotalPrice.innerText = Math.round(calculateTotalPrice(arr),2) ;
         
         CalculateTotalPrice(JSON.parse(localStorage.getItem("basket"))); 
         location.reload();
@@ -139,10 +116,11 @@ minusButtons.forEach(button => {
     });
 });
 
+let deleteButtons = document.querySelectorAll('td[data-index] button');
 
 deleteButtons.forEach(button => {
     button.addEventListener('click', () => {
-        let index = button.parentElement.getAttribute('data-index');
+        let index = button.parentElement.getAttribute('data-id');
         let tr = button.parentElement.parentElement;
         let table = tr.parentElement;
         table.removeChild(tr);
@@ -170,7 +148,7 @@ function CalculateTotalPrice(arr) {
         let total = arr.reduce((prev, next) => {
             return prev + next.price * next.count;
         }, 0);
-        totall.innerText = Math.round(total);
+        totall.innerText = Math.round(total,2);
     })
 
 }

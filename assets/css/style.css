@@ -335,7 +335,7 @@ i {
 .home-menu,
 .shop-menu {
   opacity: 0;
-  /* visibility: hidden; */
+  visibility: hidden;
   display: none;
   transition: all 0.5s;
   background-color: white;

@@ -104,4 +104,28 @@
     border-radius: 5px;
   }
   
+  .emptyImgCart{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   
+  .returnShop{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+.returnShop button {
+  width: 250px;
+  height: 50px;
+  background-color: darkblue;
+  color: white;
+  border-radius: 20%;
+}
+
+.emptyCart{
+  width: 700px;
+  height: 700px;
+  margin-top: 300px;
+}
