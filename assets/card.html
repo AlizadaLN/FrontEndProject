@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="./css/cart.css">
   <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="./css/shop.css">
-  <link rel="stylesheet" href="./css/.css">
+  <!-- <link rel="stylesheet" href="./css/.css"> -->
     
     <title>Card</title>
     
@@ -311,72 +311,81 @@
           
 
 
-        <div class="container">
-        
-            <div class="accountText">
-                <a href="file:///C:/Users/user/Desktop/JAVASCRIPT/FrontEndProject/assets/index.html">
-                    <h6>Home</h6>
-                </a>
-                <i style="font-size: 15px; margin-top: 15px;" class="fa-solid fa-chevron-right"></i>
-                <a href="">
-                    <h6>Cart</h6>
-                </a>
-        
-            </div>
-            <div class="cartUpdated"><p>Cart updated</p></div>
-            <div class="cartPage">
-            
+        <div id="fullCard" class="container change-d">
+
+          <div class="accountText">
+            <a href="file:///C:/Users/user/Desktop/JAVASCRIPT/FrontEndProject/assets/index.html">
+              <h6>Home</h6>
+            </a>
+            <i style="font-size: 15px; margin-top: 15px;" class="fa-solid fa-chevron-right"></i>
+            <a href="">
+              <h6>Cart</h6>
+            </a>
+          
+          </div>
+          <div class="cartUpdated">
+            <p>Cart updated</p>
+          </div>
+          <div class="cartPage">
+          
             <div class="cartRight">
-                <div class="basketLine"> 
-                    <p>Your order qualifies for free shipping!</p>
-                    <div class="redLine"></div>
-                 </div>
-                <div class="row">
-                    <table class="table d-none">
-                        <thead>
-                            <tr>
-        
-                                <th scope="col"></th>
-                                <th scope="col">Product</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Subtotal</th>
-        
-                                <th scope="col" class="deleteProduct"> </th>
-                            </tr>
-                        </thead>
-        
-                    </table>
-                </div>
-                <div class="coupone">
-                    <input type="text" placeholder="Coupon code">
-                    <button type="submit">Apply coupon</button>
-                    <button type="submit" style="margin-left: 335px;">Remove All</button>
-                </div>
-        
+              <div class="basketLine">
+                <p>Your order qualifies for free shipping!</p>
+                <div class="redLine"></div>
+              </div>
+              <div class="row">
+                <table class="table">
+                  <thead>
+                    <tr>
+          
+                      <th scope="col"></th>
+                      <th scope="col">Product</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Subtotal</th>
+          
+                      <th scope="col" class="deleteProduct"> </th>
+                    </tr>
+                  </thead>
+          
+                </table>
+              </div>
+              <div class="coupone">
+                <input type="text" placeholder="Coupon code">
+                <button type="submit">Apply coupon</button>
+                <button type="submit" style="margin-left: 335px;" id="removeAllButton">Remove All</button>
+              </div>
+          
             </div>
-
+          
             <div class="cartLeft">
-                <h5>Cart Totals</h5>
-                <div class="subtotal">
-                    <p>Subtotal</p>
+              <h5>Cart Totals</h5>
+              <div class="subtotal">
+                <p>Subtotal</p>
+              </div>
+              <div class="shipBox">
+                <div class="shipping">Shipping</div>
+                <div class="address"><input type="radio">Free Shipping <br>
+                  <input type="radio">Local pickup <br>
+                  <p>Shipping to All</p> <br>
+                  <a style="color: blue;" href="">Change Adress</a>
                 </div>
-                <div class="shipBox">
-                    <div class="shipping">Shipping</div>
-                    <div class="address"><input type="radio">Free Shipping <br>
-                        <input type="radio">Local pickup <br>
-                        <p>Shipping to All</p> <br>
-                        <a style="color: blue;" href="">Change Adress</a>
-                    </div>
-            
-                </div>
-                <div class="total">Total: <span id="totalPrice">0</span></div>
-                <div class="proceedBtn"><button type="submit">Proceed to checkout</button></div>
-           
+          
+              </div>
+              <div class="total" id="totalPrice">
+                <p>$0.00</p>
+              </div>
+              <div class="proceedBtn"><button type="submit">Proceed to checkout</button></div>
+          
             </div>
+          
+          </div>
 
+           
         </div>
-        </div>
+        <div id="emptyCard"><h6>Empty Card</h6></div>
+
+
 
         <div class="footer-container">
             <div class="footer-first">
@@ -515,18 +524,18 @@
 
     
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
   integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
   integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="path/to/slick/slick.min.js"></script>
-<script src="./slick-1.8.1 (2)/slick-1.8.1/slick/slick.js"></script>
-<script src="./js/script.js"></script>
+<!-- <script type="text/javascript" src="path/to/slick/slick.min.js"></script> -->
+<!-- <script src="./slick-1.8.1 (2)/slick-1.8.1/slick/slick.js"></script> -->
+<!-- <script src="./js/script.js"></script> -->
 <script src="./js/home.js"></script>
 <script src="./js/card.js"></script>
-<script src="./js/shop.js"></script>
+<!-- <script src="./js/shop.js"></script> -->
 </html>

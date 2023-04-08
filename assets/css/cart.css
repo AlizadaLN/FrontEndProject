@@ -6,7 +6,9 @@
     width: 70%;
   
   }
-  
+  .change-d{
+    display:none;
+  }
   .basketLine{
     margin-top: 40px;
     width: 100%;
