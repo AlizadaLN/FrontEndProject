@@ -1,5 +1,5 @@
 let table = document.querySelector(".table");
-let container = document.querySelector(".container");
+let cardCont = document.querySelector(".cardCont");
 let emptyCard = document.getElementById("emptyCard");
 let fullCard = document.getElementById("fullCard");
 let totalPriceElement = document.querySelectorAll("#totalPrice");
@@ -44,11 +44,11 @@ if (localStorage.getItem("basket") != null) {
 
     CalculateTotalPrice(arr);
 
-    container.style.display = 'block';
+    cardCont.style.display = 'block';
 }
 else {
 
-    container.style.display = 'none';
+    cardCont.style.display = 'none';
 }
 
 
