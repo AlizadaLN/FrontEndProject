@@ -65,10 +65,15 @@ function pad(number) {
 }
 
 
+  Modal Location
+
+let modalTrigger = document.getElementById('locationModalTrigger');
+let modal = document.getElementById('locationModal');
+let closeModal = document.getElementById('modalClose');
+let stateSelect = document.getElementById('stateSelect');
+modalTrigger.addEventListener('click', function () {
+  modal.style.display = 'block';
+});
 
 
 
-
-
-
- 

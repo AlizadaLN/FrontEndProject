@@ -837,6 +837,23 @@ i {
 
 }
 
+.btnSlide{
+  width: 200px;
+  height: 30px;
+  background-color: #fcb900;
+  border: none;
+  border-radius: 30px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.btnSlide :hover {
+  background-color: #fcb900;
+}
+
+
 .textRecomended {
   width: 90px;
   height: 20px;

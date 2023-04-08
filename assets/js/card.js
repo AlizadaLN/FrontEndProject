@@ -11,12 +11,12 @@ if (localStorage.getItem("basket") != null) {
     fullCard.classList.remove("change-d");
     emptyCard.classList.add("change-d");
 
-    if (arr.length==0){
-        table.style.display="none";
+    if (arr.length == 0) {
+        table.style.display = "none";
         fullCard.classList.add("change-d");
-    emptyCard.classList.remove("change-d");
+        emptyCard.classList.remove("change-d");
     } else {
-        table.style.display="block";
+        table.style.display = "block";
     }
 
 
@@ -62,19 +62,19 @@ plusButtons.forEach(button => {
         let quantityValue = button.parentElement.querySelector('.quantity-value');
         let count = parseInt(quantityValue.innerText);
         let arr = JSON.parse(localStorage.getItem("basket"));
-        
+
         let existProduct = arr.find((p) => p.id == id);
 
-        if (existProduct.id==id) {
-            existProduct.count++; 
+        if (existProduct.id == id) {
+            existProduct.count++;
 
         }
-        localStorage.setItem("basket",JSON.stringify(arr));
-        quantityValue.innerText = count + 1; 
+        localStorage.setItem("basket", JSON.stringify(arr));
+        quantityValue.innerText = count + 1;
         let subTotalPrice = document.querySelector(".subTotalPrice");
-        subTotalPrice.innerText = Math.round(calculateTotalPrice(arr),3) ;
-        
-        CalculateTotalPrice(JSON.parse(localStorage.getItem("basket"))); 
+        subTotalPrice.innerText = Math.round(calculateTotalPrice(arr), 3);
+
+        CalculateTotalPrice(JSON.parse(localStorage.getItem("basket")));
         location.reload();
     });
 });
@@ -82,11 +82,11 @@ plusButtons.forEach(button => {
 
 
 function calculateTotalPrice(arr) {
-    let sum = arr.reduce((prev,next)=>{
+    let sum = arr.reduce((prev, next) => {
         return prev + next.price * next.count;
-    },0);
+    }, 0);
     return sum;
-    
+
 }
 
 
@@ -98,19 +98,19 @@ minusButtons.forEach(button => {
         let quantityValue = button.parentElement.querySelector('.quantity-value');
         let count = parseInt(quantityValue.innerText);
         let arr = JSON.parse(localStorage.getItem("basket"));
-        
+
         let existProduct = arr.find((p) => p.id == id);
 
-        if (existProduct.id==id) {
-            existProduct.count--; 
+        if (existProduct.id == id) {
+            existProduct.count--;
 
         }
-        localStorage.setItem("basket",JSON.stringify(arr));
-        quantityValue.innerText = count - 1; 
+        localStorage.setItem("basket", JSON.stringify(arr));
+        quantityValue.innerText = count - 1;
         let subTotalPrice = document.querySelector(".subTotalPrice");
-        subTotalPrice.innerText = Math.round(calculateTotalPrice(arr),2) ;
-        
-        CalculateTotalPrice(JSON.parse(localStorage.getItem("basket"))); 
+        subTotalPrice.innerText = Math.round(calculateTotalPrice(arr), 2);
+
+        CalculateTotalPrice(JSON.parse(localStorage.getItem("basket")));
         location.reload();
 
     });
@@ -148,22 +148,28 @@ function CalculateTotalPrice(arr) {
         let total = arr.reduce((prev, next) => {
             return prev + next.price * next.count;
         }, 0);
-        totall.innerText = Math.round(total,2);
+        totall.innerText = Math.round(total, 2);
     })
 
 }
-
-
 
 if (localStorage.getItem("basket") != null) {
     CalculateTotalPrice(JSON.parse(localStorage.getItem("basket")));
 }
 
-
 let removeAllButton = document.getElementById("removeAllButton");
-removeAllButton.addEventListener("click", function(e){
+removeAllButton.addEventListener("click", function (e) {
     e.preventDefault();
     localStorage.removeItem("basket");
     basketCount.innerText = 0;
-});
 
+    
+    let table = document.querySelector(".table");
+    table.innerHTML = ""; 
+
+    let totalPriceElement = document.querySelectorAll("#totalPrice");
+    totalPriceElement.forEach((totall) => {
+        totall.innerText = 0; 
+        location.reload();
+    });
+});

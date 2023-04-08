@@ -1,24 +1,3 @@
-// let totalPriceElement = document.querySelectorAll("#totalPrice");
-
-//   Modal Location
-
-const modalTrigger = document.getElementById('locationModalTrigger');
-const modal = document.getElementById('locationModal');
-const closeModal = document.getElementById('modalClose');
-const stateSelect = document.getElementById('stateSelect');
-modalTrigger.addEventListener('click', function () {
-  modal.style.display = 'block';
-});
-// closeModal.addEventListener('click', function() {
-//   modal.style.display = 'none';
-// });
-
-// stateSelect.addEventListener('change', function() {
-//   const selectedState = stateSelect.value;
-//   alert(`Selected State: ${selectedState}`);
-// });
-
-
 
 
 
@@ -67,17 +46,6 @@ function calculatedBasketCount() {
   }
 }
 calculatedBasketCount();
-
-
-// function CalculateTotalPrice(arr) {
-//   totalPriceElement.forEach((totall) => {
-//       let total = arr.reduce((prev, next) => {
-//           return prev + next.price * next.count;
-//       }, 0);
-//       totall.innerText = Math.round(total);
-//   });
-
-// };
 
 
 
