@@ -338,15 +338,17 @@ i {
   visibility: hidden;
   transition: all 0.5s;
   background-color: white;
-  z-index: 1;
+  z-index: -1;
   padding: 35px;
-
+  display: none;
 }
 
 .nav-item:hover .home-menu,
-.nav-item:hover .shop-menu {
+.shop:hover .shop-menu {
   opacity: 1;
   visibility: visible;
+  z-index: 1;
+  display: block;
 }
 
 .toggle:hover {
