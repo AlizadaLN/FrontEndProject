@@ -65,7 +65,7 @@ function pad(number) {
 }
 
 
-  Modal Location
+//   Modal Location
 
 let modalTrigger = document.getElementById('locationModalTrigger');
 let modal = document.getElementById('locationModal');

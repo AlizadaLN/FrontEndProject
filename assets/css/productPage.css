@@ -1,0 +1,223 @@
+.product-main-left{
+    padding: 30px;
+}
+
+.product-header .d-flex p{
+    margin-right: 20px;
+    border-right: 1px solid gray;
+    padding-right: 10px;
+    color: gray;
+    font-size: small;
+    margin-top: 0px;
+}
+
+.border-none{
+    border: none !important;
+}
+
+.product-header .d-flex i{
+    color: rgb(231, 173, 36);
+}
+
+.product-main-left .per{
+    border: 1px solid rgb(26, 222, 240);
+    border-radius: 5px;
+    width: 15%;
+    text-align: center;
+    color: white;
+    background-color: rgb(26, 222, 240);
+}
+
+.product-main-left .rec{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    color: white;
+    background-color: gray;
+    font-size: small;
+    margin-top: -5px;
+    margin-bottom: 0px;
+}
+
+.product-main{
+    border: 1px solid rgb(229, 225, 225);
+    height: 600px;
+    border-radius: 15px;
+}
+
+.icons-tags .btn{
+    border-radius: 50%;
+    margin-left: 2px;
+    margin-top: 25px;
+    color: white;
+}
+
+.product-main-part1{
+    padding: 30px;
+    font-size: smaller;
+    color: gray;
+}
+
+.product-main-part1 .mfg{
+    
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.product-main-part1 span{
+    color: gray;
+    font-size: large;
+}
+
+.product-main-part1 span b{
+    color: red;
+    margin-left: 10px;
+    font-size: larger;
+}
+
+.product-main-part1 .stock{
+    color: green;
+    font-size: smaller;
+    border: 1px solid rgb(180, 236, 180);
+    background-color: rgb(180, 236, 180);
+    width: 25%;
+    padding: 2px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-main-part1 .plus{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-main-part1 .plus a{
+    border: 1px solid rgb(240, 235, 235);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(240, 235, 235);
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.product-main-part1 .plus a:hover{
+    background-color: yellow;
+    
+}
+
+.product-main-part1 .plus span{
+    display: flex;
+    align-items: center;
+}
+
+.product-main-part1 .plus button{
+    width: 120px;
+    border-radius: 30px;
+    background-color: blue;
+    border: none;
+    color: white;
+    font-size: larger;
+}
+
+.product-main-part1 .wish{
+    padding: 15px;
+}
+
+.product-main-part1 .wish a{
+    display: flex;
+    border: 1px solid gray;
+    width: 50%;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: smaller;
+    margin-top: 15px;
+}
+
+.product-main-part1 .clr{
+    color: rgb(84, 206, 84);
+}
+
+.product-main-part2{
+    padding: 30px;
+}
+
+.product-main-part2 .cl{
+    color: red;
+    border: 1px solid rgb(249, 169, 160);
+    border-radius: 5px;
+    background-color: rgb(249, 169, 160);
+    margin-top: 10px;
+}
+
+.product-main-part2 .part2-box{
+    border: 1px solid rgb(251, 246, 246);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(251, 246, 246);
+}
+
+.description-buttons a{
+    font-size: 20px;
+}
+
+#ai{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.additional-input{
+    display: flex;
+}
+
+.additional-input p{
+    width: 50%;
+    height: 45px;
+    border: 1px solid rgb(229, 225, 225);
+    font-size: larger;
+    padding: 5px;
+}
+
+.cont-pict img{
+    border-radius: 50%;
+}
+
+.star-one::after{
+    border-right: 5px;
+    border: 1px solid gray;
+}
+
+.rating-stars .st{
+    border-right: 3px solid gray;
+}
+
+.st:hover{
+    color: yellow;
+}
+
+
+.posRel1{
+    position: relative;
+    height: 450px;
+    width: 25%;
+  }
+
+  .newCurss{
+    width: 100%;
+    height: 420px;
+  }
+
+.fa-star{
+    font-size: smaller;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

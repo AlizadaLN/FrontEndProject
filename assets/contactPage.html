@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./slick-1.8.1 (2)/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1 (2)/slick-1.8.1/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/account.css">
+  
+  <link rel="stylesheet" href="./css/cart.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/shop.css">
+  <link rel="stylesheet" href="./css/.css">
+    <title>ContactPage</title>
+</head>
+
+<body>
+    <div class="contactPage">
+        <div class="container">
+            <div class="row">
+              <div class="header">
+                <div class="blueRow">
+                  <a href=""></a>
+        
+                </div>
+                <div class="container">
+                  <div class="firstRow">
+                    <div class="navBar navBarNewWidth">
+        
+                      <div class="topnav" id="myTopnav">
+                        <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\contactPage.html" class="active">About
+                          Us</a>
+                        <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\myAccountPage.html">My Account</a>
+                        <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\index.html">Wishlist</a>
+                        <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\index.html">Order Tracking</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                      </div>
+                    </div>
+        
+                    <div class="topbar-notice">
+        
+                      <p><i class="fa-regular fa-hand"></i>100% Secure delivery without contacting the courier</p>
+        
+                    </div>
+        
+                    <div class="text-content">
+                      Need help? Call Us: <a href="tel:0020500"><strong style="color: #2bbef9">+ 0020 500</strong></a>
+                    </div>
+        
+        
+                    <div style="display: flex; justify-content: end; padding-left: 50px;" class="language">
+                      <div class="input-group mb-3">
+                        <select style="font-size: 12px; border: none;" class="form-select" id="inputGroupSelect01">
+                          <option selected>English</option>
+                          <option value="1">Spanish</option>
+                          <option value="2">German</option>
+                        </select>
+                      </div>
+                      <div style="padding-left: 30px;" class="input-group mb-3">
+                        <select style="font-size: 12px; border: none;" class="form-select" id="inputGroupSelect01">
+                          <option selected>USD</option>
+                          <option value="1">INR</option>
+                          <option value="2">GBP</option>
+                        </select>
+                      </div>
+                    </div>
+        
+                  </div>
+                </div>
+                <div class="container bacola">
+        
+                  <nav class="navbar navbar-light ">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <div class="img col-2">
+                          <img src="./img/bacola-logo.png" alt="" style="width: 140px;">
+                          <p style="font-size: 10px;">Online Grocery Shopping Center</p>
+                        </div>
+                      </a>
+                      <a class="navbar-brand" href="#">
+                        <div class="modalLocation col-2">
+                          <button id="locationModalTrigger" class="btn"> <span style="color: lightgrey; font-size: 12px;">Your
+                              Location</span><br> Select Location<i class="fa-solid fa-chevron-down"></i></button>
+        
+        
+                          <div id="locationModal" class="modal">
+                            <div class="modal-content">
+                              <h6>Choose your Delivery Location</h6>
+                              <p style="font-size: 15px;color: lightgray;">Enter your address and we will specify the offer of
+                                your area</p>
+                              <input type="text" id="searchInput" placeholder=" Search your area">
+                              <i class="fas fa-search"></i> <br>
+                              <ul id="stateList" class="state-list" style="list-style-type: none;">
+                                <li style="display: flex;" data-value="">Select a Location <div class="minType">
+                                    <p style="font-size: 10px;">Clear all</p>
+                                  </div>
+                                </li>
+                                <li data-value="AZ">
+                                  <hr>
+                                </li>
+                                <li style="display: flex;" data-value="AL">Alabama
+                                  <div style="margin-left: 210px;" class="minType">
+                                    <p style="font-size: 10px;">min: $130</p>
+                                  </div>
+                                </li>
+        
+                                <li data-value="AZ">
+                                  <hr>
+                                </li>
+                                <li style="display: flex;" data-value="AK">Alaska
+                                  <div style="margin-left: 235px;" class="minType">
+                                    <p style="font-size: 10px;">min: $130</p>
+                                  </div>
+                                </li>
+                                <li data-value="AZ">
+                                  <hr>
+                                </li>
+                                <li style="display: flex;" data-value="AZ">Arizona
+                                  <div style="margin-left: 225px;" class="minType">
+                                    <p style="font-size: 10px;">min: $130</p>
+                                  </div>
+                                </li>
+                                <li data-value="AZ">
+                                  <hr>
+                                </li>
+                                <li style="display: flex;" data-value="AZ">California
+                                  <div style="margin-left: 210px;" class="minType">
+                                    <p style="font-size: 10px;">min: $130</p>
+                                  </div>
+                                </li>
+                                <li data-value="AZ">
+                                  <hr>
+                                </li>
+        
+        
+        
+                              </ul>
+        
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="navbar-brand" href="#">
+                        <nav class="navbar navbar-light searchBar col-5 ">
+                          <div class="container-fluid">
+                            <form class="d-flex">
+                              <input class="form-control me-2" type="search" placeholder="Search for products..."
+                                aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                          </div>
+                        </nav>
+                      </a>
+        
+        
+                      <a class="navbar-brand" href="#">
+        
+                        <div class="icons col-3">
+                          <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\myAccountPage.html">
+                            <div class="signIn"><i class="fa-regular fa-user"></i></div>
+                          </a>
+                          <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\cardPage.html">
+                            <div class="total" id="totalPrice">0</div>
+        
+                          </a>
+                          <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\cardPage.html">
+                            <div class="basket"><i class="fa-solid fa-basket-shopping"></i><sup id="basketCount">0</sup></div>
+                          </a>
+                        </div>
+        
+        
+                      </a>
+        
+        
+                    </div>
+                  </nav>
+        
+                </div>
+                <div class="container mainMenu">
+                  <div class="allCategories">
+        
+                    <div class="dropdown menuALLcat">
+                      <button class="btn btn-secondary dropdown-toggle categBtn" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i> ALL CATEGORIES
+                      </button>
+        
+                      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton4">
+                        <li><a class="dropdown-item active" href="#"><i class="fa-solid fa-apple-whole"></i>Fruits &
+                            Vegetables</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-fish"></i>Meats & Seafood</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-egg"></i>Breakfast & Dairy</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-mug-hot"></i>Beverages</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bread-slice"></i></i>Breads & Bakery</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-snowflake"></i>Frozen Foods</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cake-candles"></i>Biscuits & Snacks</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-stapler"></i>Grocery & Staples</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Value of the day</a></li>
+                        <li><a class="dropdown-item" href="#">Top 100 offers</a></li>
+                        <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                  <div class="help"></div>
+                  <ul class="nav nav-pills leftMainMenu">
+                    <li class="nav-item home">
+                      <a class="nav-link toggle" data-bs-toggle="home" href="#" role="button" aria-expanded="false">HOME<i
+                          class="fa-solid fa-chevron-down"></i></a>
+                      <ul class="home-menu div flex-column">
+                        <li><a class="home-item" href="#">Home 1</a></li>
+                        <li><a class="home-item" href="#">Home 2</a></li>
+                        <li><a class="home-item"
+                            href="file:///C:/Users/user/Desktop/JAVASCRIPT/FrontEndProject/assets/index.html">Home 3</a></li>
+                        <li><a class="home-item" href="#">Home 4</a></li>
+                        <li><a class="home-item" href="#">Home 5</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item shop">
+                      <a class="nav-link toggle" data-bs-toggle="dropdown"
+                        href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\shop.html" role="button"
+                        aria-expanded="false">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+                      <div class="div">
+                        <ul class="shop-menu">
+                          <li><a class="shop-item" href="#">Shop Lists</a></li>
+                          <ul class="shopList-menu">
+                            <li><a class="shopLists-item"
+                                href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\shopPage.html">Shop Default</a>
+                            </li>
+                            <li><a class="shopLists-item"
+                                href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\shopPage.html">Shop Right
+                                Sidebar</a></li>
+                            <li><a class="shopLists-item"
+                                href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\shopPage.html">Shop Wide</a></li>
+                            <li><a class="shopLists-item" href="#">List Left Sidebar</a></li>
+                            <li><a class="shopLists-item" href="#">Load More Button</a></li>
+                            <li><a class="shopLists-item" href="#">Infinite Scrolling</a></li>
+                          </ul>
+                        </ul>
+        
+                        <ul class="shop-menu">
+                          <li><a class="shop-item"
+                              href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\productPage.html">Product Detail</a>
+                          </li>
+                          <ul class="productDetail-menu">
+                            <li><a class="productDetail-item"
+                                href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\productPage.html">Product
+                                Default</a></li>
+                            <li><a class="productDetail-item"
+                                href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\productPage.html">Product
+                                Variable</a></li>
+                            <li><a class="productDetail-item"
+                                href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\productPage.html">Product
+                                Grouped</a></li>
+                            <li><a class="productDetail-item" href="#">Product External</a></li>
+                            <li><a class="productDetail-item" href="#">Product Downloadable</a></li>
+                            <li><a class="productDetail-item" href="#">Product With Video</a></li>
+                          </ul>
+                        </ul>
+        
+                        <ul class="shop-menu">
+                          <li><a class="shop-item" href="#">Product Types</a></li>
+                          <ul class="productTypes-menu">
+                            <li><a class="productTypes-item" href="#">Single Type 1</a></li>
+                            <li><a class="productTypes-item" href="#">Single Type 2</a></li>
+                            <li><a class="productTypes-item" href="#">Single Type 3</a></li>
+                            <li><a class="productTypes-item" href="#">Single Type 4</a></li>
+                            <li><a class="productTypes-item" href="#">Thumbnails Left</a></li>
+                            <li><a class="productTypes-item" href="#">Zoom Image</a></li>
+                          </ul>
+                        </ul>
+        
+                        <ul class="shop-menu">
+                          <li><a class="shop-item" href="#">Shop Pages</a></li>
+                          <ul class="shopPages-menu">
+                            <li><a class="shopPages-item"
+                                href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\cardPage.html">Cart</a></li>
+                            <li><a class="shopPages-item" href="">Checkout</a></li>
+                            <li><a class="shopPages-item"
+                                href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\myAccountPage.html">My account</a>
+                            </li>
+                            <li><a class="shopPages-item" href="#">Wishlist</a></li>
+                            <li><a class="shopPages-item" href="#">Order Tracking</a></li>
+                            <li><a class="shopPages-item" href="#">Order on WhatsApp</a></li>
+                          </ul>
+                        </ul>
+        
+                        <ul class="shop-menu">
+                          <li><a class="shop-item" href="#">Shop Layouts</a></li>
+                          <ul class="shopLayouts-menu">
+                            <li><a class="shopLayouts-item" href="#">Two Columns</a></li>
+                            <li><a class="shopLayouts-item" href="#">Three Columns</a></li>
+                            <li><a class="shopLayouts-item" href="#">Three Columns Wide</a></li>
+                            <li><a class="shopLayouts-item" href="#">Four Columns</a></li>
+                            <li><a class="shopLayouts-item" href="#">Four Columns Wide</a></li>
+                            <li><a class="shopLayouts-item" href="#">Five Columns wide</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+        
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link toggle" href="#"><i class="fa-solid fa-fish-fins"></i>MEATS & SEAFOOD</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link toggle" href="#" aria-disabled="true"><i
+                          class="fa-solid fa-cake-candles"></i>BAKERY</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link toggle" href="#" aria-disabled="true"><i class="fa-solid fa-mug-hot"></i>BEVERAGES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link toggle" href="#" aria-disabled="true">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link toggle" href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\contactPage.html"
+                        aria-disabled="true">CONTACT</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+        
+
+            </div>
+        </div>
+
+        <div class="container containerMain">
+
+            <div class="contactMainText">
+                <h1>Get in Touch</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat unde quam dolor culpa
+                    veritatis inventore, aut commodi eum veniam vel.</p>
+            </div>
+
+            <div class=contactCards>
+
+                <div class="cardsInformation col-4">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h6>102 Street 2714 Donovan</h6>
+                    <span>Lorem ipsum dolar site amet discont</span>
+                </div>
+                <div class="cardsInformation col-4">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <h6>+02 1234 567 88</h6>
+
+                    <span>Lorem ipsum dolar site amet discont</span>
+                </div>
+                <div class="cardsInformation col-4">
+                    <i class="fa-regular fa-envelope"></i>
+                    <h6>info@example.com </h6>
+
+                    <span>Lorem ipsum dolar site amet discont</span>
+                </div>
+
+
+            </div>
+
+            <div class="contactBox">
+
+                <div class="contactMainText">
+                    <h1>Send Us</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quaerat unde quam dolor culpa
+                        veritatis <br> inventore, aut commodi eum veniam vel.</p>
+                </div>
+
+                <div class="formBox">
+
+                    <form action="">
+                        <label id="contact1" for="">Your name*</label>
+                        <label id="contact2" for="">Your email*</label> <br>
+                        <input id="textContact1" type="text">
+                        <input id="textContact2" type="text"> <br>
+                        <label id="contact3" for="">Subject*</label>
+                        <input id="textContact3" type="text"> <br>
+                        <label id="contact4" for="">Your message</label> <br>
+                        <input id="textContact4" type="text"> <br>
+                        <button id="contactSubmit" type="submit">Send Message</button>
+
+
+                    </form>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-first">
+                <div class="footer-first-img">
+                    <img src="./img/Home 3 – Bacola – Grocery Market and Food Theme_files/coupon.png" alt="">
+                </div>
+                <div class="footer-first-cont">
+                    <span>$20 discount for your first order</span>
+                    <h3>Join our newsletter and get...</h3>
+                    <p>Join our email subscription now to get updates <br>
+                        on promotions and coupons</p>
+                    <div class="input-box">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" required placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-second">
+                <div class="element1 elm">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                    <span>Everyday fresh products</span>
+                </div>
+                <div class="element2 elm">
+                    <i class="fa-solid fa-truck"></i>
+                    <span>Free delivery for order over $70</span>
+                </div>
+                <div class="element3 elm">
+                    <i class="fa-solid fa-percent"></i>
+                    <span>Daily Mega Discounts</span>
+                </div>
+                <div class="element4">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Best price on the market</span>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-third">
+                <div class="footer-box">
+                    <div class="fruits-type-foot">
+                        <span><b>FRUIT & VEGETABLES</b></span>
+                        <ul class="fruits-menu-foot">
+                            <li><a class="fruits-item" href="#">Cuts & Sprouts</a></li>
+                            <li><a class="fruits-item" href="#">Exotic Fruits & Veggies</a></li>
+                            <li><a class="fruits-item" href="#">Fresh Fruits</a></li>
+                            <li><a class="fruits-item" href="#">Fresh Vegetables</a></li>
+                            <li><a class="fruits-item" href="#">Herbs & Seasonings</a></li>
+                            <li><a class="fruits-item" href="#">Packaged Produce</a></li>
+                            <li><a class="fruits-item" href="#">Party Trays</a></li>
+                        </ul>
+                    </div>
+                    <div class="breakfast-type-foot">
+                        <span><b>BREAKFAST & DAIRY</b></span>
+                        <ul class="breakfast-menu-foot">
+                            <li><a class="breakfast-item" href="#">Milk & Flavoured Milk</a></li>
+                            <li><a class="breakfast-item" href="#">Butter and Margarine</a></li>
+                            <li><a class="breakfast-item" href="#">Cheese</a></li>
+                            <li><a class="breakfast-item" href="#">Eggs Substitutes</a></li>
+                            <li><a class="breakfast-item" href="#">Honey</a></li>
+                            <li><a class="breakfast-item" href="#">Marmalades</a></li>
+                            <li><a class="breakfast-item" href="#">Sour Cream and Dips</a></li>
+                            <li><a class="breakfast-item" href="#">Yogurt</a></li>
+                        </ul>
+                    </div>
+                    <div class="meat-type-foot">
+                        <span><b>MEAT & SEAFOOD</b></span>
+                        <ul class="meat-menu-foot">
+                            <li><a class="meat-item" href="#">Breakfast Sausage</a></li>
+                            <li><a class="meat-item" href="#">Dinner Sausage</a></li>
+                            <li><a class="meat-item" href="#">Beef</a></li>
+                            <li><a class="meat-item" href="#">Chicken</a></li>
+                            <li><a class="meat-item" href="#">Sliced Deli Meat</a></li>
+                            <li><a class="meat-item" href="#">Shrimp</a></li>
+                            <li><a class="meat-item" href="#">Wild Caught Fillets</a></li>
+                            <li><a class="meat-item" href="#">Crab and Shellfish</a></li>
+                            <li><a class="meat-item" href="#">Farm Raised Fillets</a></li>
+                        </ul>
+                    </div>
+                    <div class="beverages-type-foot">
+                        <span><b>BEVERAGES</b></span>
+                        <ul class="beverages-menu-foot">
+                            <li><a class="beverages-item" href="#">Water</a></li>
+                            <li><a class="beverages-item" href="#">Sparkling Water</a></li>
+                            <li><a class="beverages-item" href="#">Soda & Pop</a></li>
+                            <li><a class="beverages-item" href="#">Coffee</a></li>
+                            <li><a class="beverages-item" href="#">Milk & Plant-Based Milk</a></li>
+                            <li><a class="beverages-item" href="#">Tea & Kombucha</a></li>
+                            <li><a class="beverages-item" href="#">Drink Boxes & Pouches</a></li>
+                            <li><a class="beverages-item" href="#">Craft Beer</a></li>
+                            <li><a class="beverages-item" href="#">Wine</a></li>
+                        </ul>
+                    </div>
+                    <div class="bakery-type-foot">
+                        <span><b>BREADS & BAKERY</b></span>
+                        <ul class="bakery-menu-foot">
+                            <li><a class="bakery-item" href="#">Milk & Flavoured Milk</a></li>
+                            <li><a class="bakery-item" href="#">Butter and Margarine</a></li>
+                            <li><a class="bakery-item" href="#">Cheese</a></li>
+                            <li><a class="bakery-item" href="#">Eggs Substitutes</a></li>
+                            <li><a class="bakery-item" href="#">Honey</a></li>
+                            <li><a class="bakery-item" href="#">Marmalades</a></li>
+                            <li><a class="bakery-item" href="#">Sour Cream and Dips</a></li>
+                            <li><a class="bakery-item" href="#">Yogurt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-forth">
+                <div class="footer-cont-left">
+                    <i class="fa-solid fa-phone"></i>
+                    <b>8 800 555-55</b>
+                    <p style="color: gray;">Working 8:00 - 22:00</p>
+                </div>
+                <div class="footer-cont-right">
+                    <div class="left-cont">
+                        <b>Download App on Mobile:</b>
+                        <p style="color: gray; font-size: smaller;">15% discount on your first purchase</p>
+                    </div>
+                    <div class="center-cont">
+                        <img src="./img/google-play.png" alt="">
+                        <img src="./img/app-store.png" alt="">
+                    </div>
+                    <div class="right-cont" style="font-size: larger;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="path/to/slick/slick.min.js"></script>
+<script src="./slick-1.8.1 (2)/slick-1.8.1/slick/slick.js"></script>
+<script src="./js/cardPage.js"></script>
+<script src="./js/homeCard.js"></script>
+
+<script src="./js/script.js"></script>
+
+
+
+
+</html>

@@ -13,469 +13,493 @@
   <link rel="stylesheet" href="./slick-1.8.1 (2)/slick-1.8.1/slick/slick.css">
   <link rel="stylesheet" href="./slick-1.8.1 (2)/slick-1.8.1/slick/slick-theme.css">
 
+
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/account.css">
   <link rel="stylesheet" href="./css/blog.css">
   <link rel="stylesheet" href="./css/cart.css">
   <link rel="stylesheet" href="./css/contact.css">
   <link rel="stylesheet" href="./css/shop.css">
-  <link rel="stylesheet" href="./css/.css">
-  <title>blogPage</title>
+  <link rel="stylesheet" href="./css/productPage.css">
+  <title>BlogPage</title>
 </head>
 
 <body>
   <div class="blogPage">
     <div class="container">
-      
-        <div class="header">
-          <div class="blueRow">
-            <a href=""></a>
+
+      <div class="header">
+        <div class="blueRow">
+          <a href=""></a>
+
+        </div>
+        <div class="container">
+          <div class="firstRow">
+            <div class="navBar navBarNewWidth">
+
+              <div class="topnav" id="myTopnav">
+                <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\contactPage.html" class="active">About
+                  Us</a>
+                <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\myAccountPage.html">My Account</a>
+                <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\index.html">Wishlist</a>
+                <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\index.html">Order Tracking</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="topbar-notice">
+
+              <p><i class="fa-regular fa-hand"></i>100% Secure delivery without contacting the courier</p>
+
+            </div>
+
+            <div class="text-content">
+              Need help? Call Us: <a href="tel:0020500"><strong style="color: #2bbef9">+ 0020 500</strong></a>
+            </div>
+
+
+            <div style="display: flex; justify-content: end; padding-left: 50px;" class="language">
+              <div class="input-group mb-3">
+                <select style="font-size: 12px; border: none;" class="form-select" id="inputGroupSelect01">
+                  <option selected>English</option>
+                  <option value="1">Spanish</option>
+                  <option value="2">German</option>
+                </select>
+              </div>
+              <div style="padding-left: 30px;" class="input-group mb-3">
+                <select style="font-size: 12px; border: none;" class="form-select" id="inputGroupSelect01">
+                  <option selected>USD</option>
+                  <option value="1">INR</option>
+                  <option value="2">GBP</option>
+                </select>
+              </div>
+            </div>
 
           </div>
-          <div class="container">
-            <div class="firstRow">
-              <div class="navBar navBarNewWidth">
+        </div>
+        <div class="container bacola">
 
-                <div class="topnav" id="myTopnav">
-                  <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\index.html" class="active">About
-                    Us</a>
-                  <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\my account.html">My Account</a>
-                  <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\index.html">Wishlist</a>
-                  <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\index.html">Order Tracking</a>
-                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+          <nav class="navbar navbar-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <div class="img col-2">
+                  <img src="./img/bacola-logo.png" alt="" style="width: 140px;">
+                  <p style="font-size: 10px;">Online Grocery Shopping Center</p>
+                </div>
+              </a>
+              <a class="navbar-brand" href="#">
+                <div class="modalLocation col-2">
+                  <button id="locationModalTrigger" class="btn"> <span style="color: lightgrey; font-size: 12px;">Your
+                      Location</span><br> Select Location<i class="fa-solid fa-chevron-down"></i></button>
+
+
+                  <div id="locationModal" class="modal">
+                    <div class="modal-content">
+                      <h6>Choose your Delivery Location</h6>
+                      <p style="font-size: 15px;color: lightgray;">Enter your address and we will specify the offer of
+                        your area</p>
+                      <input type="text" id="searchInput" placeholder=" Search your area">
+                      <i class="fas fa-search"></i> <br>
+                      <ul id="stateList" class="state-list" style="list-style-type: none;">
+                        <li style="display: flex;" data-value="">Select a Location <div class="minType">
+                            <p style="font-size: 10px;">Clear all</p>
+                          </div>
+                        </li>
+                        <li data-value="AZ">
+                          <hr>
+                        </li>
+                        <li style="display: flex;" data-value="AL">Alabama
+                          <div style="margin-left: 210px;" class="minType">
+                            <p style="font-size: 10px;">min: $130</p>
+                          </div>
+                        </li>
+
+                        <li data-value="AZ">
+                          <hr>
+                        </li>
+                        <li style="display: flex;" data-value="AK">Alaska
+                          <div style="margin-left: 235px;" class="minType">
+                            <p style="font-size: 10px;">min: $130</p>
+                          </div>
+                        </li>
+                        <li data-value="AZ">
+                          <hr>
+                        </li>
+                        <li style="display: flex;" data-value="AZ">Arizona
+                          <div style="margin-left: 225px;" class="minType">
+                            <p style="font-size: 10px;">min: $130</p>
+                          </div>
+                        </li>
+                        <li data-value="AZ">
+                          <hr>
+                        </li>
+                        <li style="display: flex;" data-value="AZ">California
+                          <div style="margin-left: 210px;" class="minType">
+                            <p style="font-size: 10px;">min: $130</p>
+                          </div>
+                        </li>
+                        <li data-value="AZ">
+                          <hr>
+                        </li>
+
+
+
+                      </ul>
+
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="navbar-brand" href="#">
+                <nav class="navbar navbar-light searchBar col-5 ">
+                  <div class="container-fluid">
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search for products..."
+                        aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit"><i
+                          class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                  </div>
+                </nav>
+              </a>
+
+
+              <a class="navbar-brand" href="#">
+
+                <div class="icons col-3">
+                  <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\myAccountPage.html">
+                    <div class="signIn"><i class="fa-regular fa-user"></i></div>
+                  </a>
+                  <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\cardPage.html">
+                    <div class="total" id="totalPrice">0</div>
+
+                  </a>
+                  <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\cardPage.html">
+                    <div class="basket"><i class="fa-solid fa-basket-shopping"></i><sup id="basketCount">0</sup></div>
                   </a>
                 </div>
-              </div>
-
-              <div class="topbar-notice">
-
-                <p><i class="fa-regular fa-hand"></i>100% Secure delivery without contacting the courier</p>
-
-              </div>
-
-              <div class="text-content">
-                Need help? Call Us: <a href="tel:0020500"><strong style="color: #2bbef9">+ 0020 500</strong></a>
-              </div>
 
 
-              <div style="display: flex; justify-content: end; padding-left: 50px;" class="language">
-                <div class="input-group mb-3">
-                  <select style="font-size: 12px; border: none;" class="form-select" id="inputGroupSelect01">
-                    <option selected>English</option>
-                    <option value="1">Spanish</option>
-                    <option value="2">German</option>
-                  </select>
-                </div>
-                <div style="padding-left: 30px;" class="input-group mb-3">
-                  <select style="font-size: 12px; border: none;" class="form-select" id="inputGroupSelect01">
-                    <option selected>USD</option>
-                    <option value="1">INR</option>
-                    <option value="2">GBP</option>
-                  </select>
-                </div>
-              </div>
+              </a>
+
 
             </div>
-          </div>
-          <div class="container bacola">
+          </nav>
 
-            <nav class="navbar navbar-light ">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                  <div class="img col-2">
-                    <img src="./img/bacola-logo.png" alt="" style="width: 140px;">
-                    <p style="font-size: 10px;">Online Grocery Shopping Center</p>
-                  </div>
-                </a>
-                <a class="navbar-brand" href="#">
-                  <div class="modalLocation col-2">
-                    <button id="locationModalTrigger" class="btn"> <span style="color: lightgrey; font-size: 12px;">Your
-                        Location</span><br> Select Location<i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class="container mainMenu">
+          <div class="allCategories">
 
+            <div class="dropdown menuALLcat">
+              <button class="btn btn-secondary dropdown-toggle categBtn" type="button" id="dropdownMenuButton2"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i> ALL CATEGORIES
+              </button>
 
-                    <div id="locationModal" class="modal">
-                      <div class="modal-content">
-                        <h6>Choose your Delivery Location</h6>
-                        <p style="font-size: 15px;color: lightgray;">Enter your address and we will specify the offer of
-                          your area</p>
-                        <input type="text" id="searchInput" placeholder=" Search your area">
-                        <i class="fas fa-search"></i> <br>
-                        <ul id="stateList" class="state-list" style="list-style-type: none;">
-                          <li style="display: flex;" data-value="">Select a Location <div class="minType">
-                              <p style="font-size: 10px;">Clear all</p>
-                            </div>
-                          </li>
-                          <li data-value="AZ">
-                            <hr>
-                          </li>
-                          <li style="display: flex;" data-value="AL">Alabama
-                            <div style="margin-left: 210px;" class="minType">
-                              <p style="font-size: 10px;">min: $130</p>
-                            </div>
-                          </li>
-
-                          <li data-value="AZ">
-                            <hr>
-                          </li>
-                          <li style="display: flex;" data-value="AK">Alaska
-                            <div style="margin-left: 235px;" class="minType">
-                              <p style="font-size: 10px;">min: $130</p>
-                            </div>
-                          </li>
-                          <li data-value="AZ">
-                            <hr>
-                          </li>
-                          <li style="display: flex;" data-value="AZ">Arizona
-                            <div style="margin-left: 225px;" class="minType">
-                              <p style="font-size: 10px;">min: $130</p>
-                            </div>
-                          </li>
-                          <li data-value="AZ">
-                            <hr>
-                          </li>
-                          <li style="display: flex;" data-value="AZ">California
-                            <div style="margin-left: 210px;" class="minType">
-                              <p style="font-size: 10px;">min: $130</p>
-                            </div>
-                          </li>
-                          <li data-value="AZ">
-                            <hr>
-                          </li>
-
-
-
-                        </ul>
-
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a class="navbar-brand" href="#">
-                  <nav class="navbar navbar-light searchBar col-5 ">
-                    <div class="container-fluid">
-                      <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search for products..."
-                          aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><i
-                            class="fa-solid fa-magnifying-glass"></i></button>
-                      </form>
-                    </div>
-                  </nav>
-                </a>
-
-
-                <a class="navbar-brand" href="#">
-
-                  <div class="icons col-3">
-                    <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\my account.html">
-                      <div class="signIn"><i class="fa-regular fa-user"></i></div>
-                    </a>
-                    <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\card.html">
-                      <div class="total" id="totalPrice">
-                        <p>$0.00</p>
-                      </div>
-
-                    </a>
-                    <a href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\card.html">
-                      <div class="basket"><i class="fa-solid fa-basket-shopping"></i><sup id="basketCount">0</sup></div>
-                    </a>
-                  </div>
-
-
-                </a>
-
-
-              </div>
-            </nav>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton4">
+                <li><a class="dropdown-item active" href="#"><i class="fa-solid fa-apple-whole"></i>Fruits &
+                    Vegetables</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-fish"></i>Meats & Seafood</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-egg"></i>Breakfast & Dairy</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-mug-hot"></i>Beverages</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bread-slice"></i></i>Breads & Bakery</a>
+                </li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-snowflake"></i>Frozen Foods</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cake-candles"></i>Biscuits & Snacks</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-stapler"></i>Grocery & Staples</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Value of the day</a></li>
+                <li><a class="dropdown-item" href="#">Top 100 offers</a></li>
+                <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+              </ul>
+            </div>
 
           </div>
-          <div class="container mainMenu">
-            <div class="allCategories">
+          <div class="help"></div>
+          <ul class="nav nav-pills leftMainMenu">
+            <li class="nav-item home">
+              <a class="nav-link toggle" data-bs-toggle="home" href="#" role="button" aria-expanded="false">HOME<i
+                  class="fa-solid fa-chevron-down"></i></a>
+              <ul class="home-menu div flex-column">
+                <li><a class="home-item" href="#">Home 1</a></li>
+                <li><a class="home-item" href="#">Home 2</a></li>
+                <li><a class="home-item"
+                    href="file:///C:/Users/user/Desktop/JAVASCRIPT/FrontEndProject/assets/index.html">Home 3</a></li>
+                <li><a class="home-item" href="#">Home 4</a></li>
+                <li><a class="home-item" href="#">Home 5</a></li>
+              </ul>
+            </li>
+            <li class="nav-item shop">
+              <a class="nav-link toggle" data-bs-toggle="dropdown"
+                href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\shop.html" role="button"
+                aria-expanded="false">SHOP<i class="fa-solid fa-chevron-down"></i></a>
+              <div class="div">
+                <ul class="shop-menu">
+                  <li><a class="shop-item" href="#">Shop Lists</a></li>
+                  <ul class="shopList-menu">
+                    <li><a class="shopLists-item"
+                        href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\shopPage.html">Shop Default</a>
+                    </li>
+                    <li><a class="shopLists-item"
+                        href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\shopPage.html">Shop Right
+                        Sidebar</a></li>
+                    <li><a class="shopLists-item"
+                        href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\shopPage.html">Shop Wide</a></li>
+                    <li><a class="shopLists-item" href="#">List Left Sidebar</a></li>
+                    <li><a class="shopLists-item" href="#">Load More Button</a></li>
+                    <li><a class="shopLists-item" href="#">Infinite Scrolling</a></li>
+                  </ul>
+                </ul>
 
-              <div class="dropdown menuALLcat">
-                <button class="btn btn-secondary dropdown-toggle categBtn" type="button" id="dropdownMenuButton2"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-bars"></i> ALL CATEGORIES
-                </button>
+                <ul class="shop-menu">
+                  <li><a class="shop-item"
+                      href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\productPage.html">Product Detail</a>
+                  </li>
+                  <ul class="productDetail-menu">
+                    <li><a class="productDetail-item"
+                        href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\productPage.html">Product
+                        Default</a></li>
+                    <li><a class="productDetail-item"
+                        href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\productPage.html">Product
+                        Variable</a></li>
+                    <li><a class="productDetail-item"
+                        href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\productPage.html">Product
+                        Grouped</a></li>
+                    <li><a class="productDetail-item" href="#">Product External</a></li>
+                    <li><a class="productDetail-item" href="#">Product Downloadable</a></li>
+                    <li><a class="productDetail-item" href="#">Product With Video</a></li>
+                  </ul>
+                </ul>
 
-                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton4">
-                  <li><a class="dropdown-item active" href="#"><i class="fa-solid fa-apple-whole"></i>Fruits &
-                      Vegetables</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-fish"></i>Meats & Seafood</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-egg"></i>Breakfast & Dairy</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-mug-hot"></i>Beverages</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bread-slice"></i></i>Breads & Bakery</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-snowflake"></i>Frozen Foods</a></li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cake-candles"></i>Biscuits & Snacks</a>
-                  </li>
-                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-stapler"></i>Grocery & Staples</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Value of the day</a></li>
-                  <li><a class="dropdown-item" href="#">Top 100 offers</a></li>
-                  <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                <ul class="shop-menu">
+                  <li><a class="shop-item" href="#">Product Types</a></li>
+                  <ul class="productTypes-menu">
+                    <li><a class="productTypes-item" href="#">Single Type 1</a></li>
+                    <li><a class="productTypes-item" href="#">Single Type 2</a></li>
+                    <li><a class="productTypes-item" href="#">Single Type 3</a></li>
+                    <li><a class="productTypes-item" href="#">Single Type 4</a></li>
+                    <li><a class="productTypes-item" href="#">Thumbnails Left</a></li>
+                    <li><a class="productTypes-item" href="#">Zoom Image</a></li>
+                  </ul>
+                </ul>
+
+                <ul class="shop-menu">
+                  <li><a class="shop-item" href="#">Shop Pages</a></li>
+                  <ul class="shopPages-menu">
+                    <li><a class="shopPages-item"
+                        href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\cardPage.html">Cart</a></li>
+                    <li><a class="shopPages-item" href="">Checkout</a></li>
+                    <li><a class="shopPages-item"
+                        href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\myAccountPage.html">My account</a>
+                    </li>
+                    <li><a class="shopPages-item" href="#">Wishlist</a></li>
+                    <li><a class="shopPages-item" href="#">Order Tracking</a></li>
+                    <li><a class="shopPages-item" href="#">Order on WhatsApp</a></li>
+                  </ul>
+                </ul>
+
+                <ul class="shop-menu">
+                  <li><a class="shop-item" href="#">Shop Layouts</a></li>
+                  <ul class="shopLayouts-menu">
+                    <li><a class="shopLayouts-item" href="#">Two Columns</a></li>
+                    <li><a class="shopLayouts-item" href="#">Three Columns</a></li>
+                    <li><a class="shopLayouts-item" href="#">Three Columns Wide</a></li>
+                    <li><a class="shopLayouts-item" href="#">Four Columns</a></li>
+                    <li><a class="shopLayouts-item" href="#">Four Columns Wide</a></li>
+                    <li><a class="shopLayouts-item" href="#">Five Columns wide</a></li>
+                  </ul>
                 </ul>
               </div>
 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link toggle" href="#"><i class="fa-solid fa-fish-fins"></i>MEATS & SEAFOOD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link toggle" href="#" aria-disabled="true"><i
+                  class="fa-solid fa-cake-candles"></i>BAKERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link toggle" href="#" aria-disabled="true"><i class="fa-solid fa-mug-hot"></i>BEVERAGES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link toggle" href="#" aria-disabled="true">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link toggle" href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\contactPage.html"
+                aria-disabled="true">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container main-container mt-5">
+        <div class="main-container-left">
+          <div class="left-box">
+            <div class="box-img">
+              <img src="./img/blog-3.jpg" alt="">
             </div>
-            <div class="help"></div>
-            <ul class="nav nav-pills leftMainMenu">
-              <li class="nav-item home">
-                <a class="nav-link toggle" data-bs-toggle="home" href="#" role="button" aria-expanded="false">HOME<i
-                    class="fa-solid fa-chevron-down"></i></a>
-                <ul class="home-menu div flex-column">
-                  <li><a class="home-item" href="#">Home 1</a></li>
-                  <li><a class="home-item" href="#">Home 2</a></li>
-                  <li><a class="home-item"
-                      href="file:///C:/Users/user/Desktop/JAVASCRIPT/FrontEndProject/assets/index.html">Home 3</a></li>
-                  <li><a class="home-item" href="#">Home 4</a></li>
-                  <li><a class="home-item" href="#">Home 5</a></li>
-                </ul>
-              </li>
-              <li class="nav-item shop">
-                <a class="nav-link toggle" data-bs-toggle="dropdown"
-                  href="C:\Users\user\Desktop\JAVASCRIPT\FrontEndProject\assets\shop.html" role="button"
-                  aria-expanded="false">SHOP<i class="fa-solid fa-chevron-down"></i></a>
-                <div class="div">
-                  <ul class="shop-menu">
-                    <li><a class="shop-item" href="#">Shop Lists</a></li>
-                    <ul class="shopList-menu">
-                      <li><a class="shopLists-item" href="#">Shop Default</a></li>
-                      <li><a class="shopLists-item" href="#">Shop Right Sidebar</a></li>
-                      <li><a class="shopLists-item" href="#">Shop Wide</a></li>
-                      <li><a class="shopLists-item" href="#">List Left Sidebar</a></li>
-                      <li><a class="shopLists-item" href="#">Load More Button</a></li>
-                      <li><a class="shopLists-item" href="#">Infinite Scrolling</a></li>
-                    </ul>
-                  </ul>
+            <div class="box-icons">
+              <i class="fa-regular fa-clock"></i> May3, 2021
+              <i class="fa-regular fa-bookmark"></i> Tips & Tricks
+              <i class="fa-solid fa-capsules"></i> food, store, themeforest
+            </div>
+            <div class="cont">
+              <h1>But I must explain to you how all this mistaken idea</h1>
+              <p>Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem
+                sed lectus.
+                Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu
+                ut lacus. In
+                gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus,
+                ex id efficitur
+                ultrices, sapien mauris sodales</p>
+            </div>
+            <div class="box-button">
+              <button type="submit">Read More</button>
+            </div>
+          </div>
 
-                  <ul class="shop-menu">
-                    <li><a class="shop-item" href="#">Product Detail</a></li>
-                    <ul class="productDetail-menu">
-                      <li><a class="productDetail-item" href="#">Product Default</a></li>
-                      <li><a class="productDetail-item" href="#">Product Variable</a></li>
-                      <li><a class="productDetail-item" href="#">Product Grouped</a></li>
-                      <li><a class="productDetail-item" href="#">Product External</a></li>
-                      <li><a class="productDetail-item" href="#">Product Downloadable</a></li>
-                      <li><a class="productDetail-item" href="#">Product With Video</a></li>
-                    </ul>
-                  </ul>
+          <div class="left-box">
+            <div class="box-img">
+              <img src="./img/blog-5.jpg" alt="">
+            </div>
+            <div class="box-icons">
+              <i class="fa-regular fa-clock"></i> May3, 2021
+              <i class="fa-regular fa-bookmark"></i> Grocery
+              <i class="fa-solid fa-capsules"></i> envato, fresh
+            </div>
+            <div class="cont">
+              <h1>The Problem With Typefaces on the Web</h1>
+              <p>Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem
+                sed lectus.
+                Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu
+                ut lacus. In
+                gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus,
+                ex id efficitur
+                ultrices, sapien mauris sodales</p>
+            </div>
+            <div class="box-button">
+              <button type="submit">Read More</button>
+            </div>
+          </div>
 
-                  <ul class="shop-menu">
-                    <li><a class="shop-item" href="#">Product Types</a></li>
-                    <ul class="productTypes-menu">
-                      <li><a class="productTypes-item" href="#">Single Type 1</a></li>
-                      <li><a class="productTypes-item" href="#">Single Type 2</a></li>
-                      <li><a class="productTypes-item" href="#">Single Type 3</a></li>
-                      <li><a class="productTypes-item" href="#">Single Type 4</a></li>
-                      <li><a class="productTypes-item" href="#">Thumbnails Left</a></li>
-                      <li><a class="productTypes-item" href="#">Zoom Image</a></li>
-                    </ul>
-                  </ul>
+          <div class="left-box">
+            <div class="box-img">
+              <img src="./img/blog-1.jpg" alt="">
+            </div>
+            <div class="box-icons">
+              <i class="fa-regular fa-clock"></i> May2, 2021
+              <i class="fa-regular fa-bookmark"></i> Grocery
+              <i class="fa-solid fa-capsules"></i> food, organic
+            </div>
+            <div class="cont">
+              <h1>English Breakfast Tea With Tasty Donut Desserts</h1>
+              <p>Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem
+                sed lectus.
+                Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu
+                ut lacus. In
+                gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus,
+                ex id efficitur
+                ultrices, sapien mauris sodales</p>
+            </div>
+            <div class="box-button">
+              <button type="submit">Read More</button>
+            </div>
+          </div>
 
-                  <ul class="shop-menu">
-                    <li><a class="shop-item" href="#">Shop Pages</a></li>
-                    <ul class="shopPages-menu">
-                      <li><a class="shopPages-item" href="#">Cart</a></li>
-                      <li><a class="shopPages-item" href="#">Checkout</a></li>
-                      <li><a class="shopPages-item" href="#">My account</a></li>
-                      <li><a class="shopPages-item" href="#">Wishlist</a></li>
-                      <li><a class="shopPages-item" href="#">Order Tracking</a></li>
-                      <li><a class="shopPages-item" href="#">Order on WhatsApp</a></li>
-                    </ul>
-                  </ul>
-
-                  <ul class="shop-menu">
-                    <li><a class="shop-item" href="#">Shop Layouts</a></li>
-                    <ul class="shopLayouts-menu">
-                      <li><a class="shopLayouts-item" href="#">Two Columns</a></li>
-                      <li><a class="shopLayouts-item" href="#">Three Columns</a></li>
-                      <li><a class="shopLayouts-item" href="#">Three Columns Wide</a></li>
-                      <li><a class="shopLayouts-item" href="#">Four Columns</a></li>
-                      <li><a class="shopLayouts-item" href="#">Four Columns Wide</a></li>
-                      <li><a class="shopLayouts-item" href="#">Five Columns wide</a></li>
-                    </ul>
-                  </ul>
-                </div>
-
-              </li>
-              <li class="nav-item">
-                <a class="nav-link toggle" href="#"><i class="fa-solid fa-fish-fins"></i>MEATS & SEAFOOD</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link toggle" href="#" aria-disabled="true"><i
-                    class="fa-solid fa-cake-candles"></i>BAKERY</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link toggle" href="#" aria-disabled="true"><i
-                    class="fa-solid fa-mug-hot"></i>BEVERAGES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link toggle" href="#" aria-disabled="true">BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link toggle"
-                  href="file:///C:/Users/user/Desktop/JAVASCRIPT/FrontEndProject/assets/contact.html?"
-                  aria-disabled="true">CONTACT</a>
-              </li>
-            </ul>
+          <div class="left-box">
+            <div class="box-img">
+              <img src="./img/blog-4.jpg" alt="">
+            </div>
+            <div class="box-icons">
+              <i class="fa-regular fa-clock"></i> May1, 2021
+              <i class="fa-regular fa-bookmark"></i> Health
+              <i class="fa-solid fa-capsules"></i> qrocery, quality
+            </div>
+            <div class="cont">
+              <h1>On the other hand we provide denounce with righteous</h1>
+              <p>Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem
+                sed lectus.
+                Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu
+                ut lacus. In
+                gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus,
+                ex id efficitur
+                ultrices, sapien mauris sodales</p>
+            </div>
+            <div class="box-button">
+              <button type="submit">Read More</button>
+            </div>
           </div>
         </div>
-
-        <div class="container main-container mt-5">
-          <div class="main-container-left">
-              <div class="left-box">
-                  <div class="box-img">
-                      <img src="./img/blog-3.jpg" alt="">
-                  </div>
-                  <div class="box-icons">
-                      <i class="fa-regular fa-clock"></i> May3, 2021
-                      <i class="fa-regular fa-bookmark"></i> Tips & Tricks
-                      <i class="fa-solid fa-capsules"></i> food, store, themeforest
-                  </div>
-                  <div class="cont">
-                      <h1>But I must explain to you how all this mistaken idea</h1>
-                      <p>Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem sed lectus.
-                      Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu ut lacus. In
-                      gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id efficitur
-                      ultrices, sapien mauris sodales</p>
-                  </div>
-                  <div class="box-button">
-                      <button type="submit">Read More</button>
-                  </div>
-              </div>
-  
-              <div class="left-box">
-                  <div class="box-img">
-                      <img src="./img/blog-5.jpg" alt="">
-                  </div>
-                  <div class="box-icons">
-                      <i class="fa-regular fa-clock"></i> May3, 2021
-                      <i class="fa-regular fa-bookmark"></i> Grocery
-                      <i class="fa-solid fa-capsules"></i> envato, fresh
-                  </div>
-                  <div class="cont">
-                      <h1>The Problem With Typefaces on the Web</h1>
-                      <p>Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem sed lectus.
-                      Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu ut lacus. In
-                      gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id efficitur
-                      ultrices, sapien mauris sodales</p>
-                  </div>
-                  <div class="box-button">
-                      <button type="submit">Read More</button>
-                  </div>
-              </div>
-  
-              <div class="left-box">
-                  <div class="box-img">
-                      <img src="./img/blog-1.jpg" alt="">
-                  </div>
-                  <div class="box-icons">
-                      <i class="fa-regular fa-clock"></i> May2, 2021
-                      <i class="fa-regular fa-bookmark"></i> Grocery
-                      <i class="fa-solid fa-capsules"></i> food, organic
-                  </div>
-                  <div class="cont">
-                      <h1>English Breakfast Tea With Tasty Donut Desserts</h1>
-                      <p>Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem sed lectus.
-                      Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu ut lacus. In
-                      gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id efficitur
-                      ultrices, sapien mauris sodales</p>
-                  </div>
-                  <div class="box-button">
-                      <button type="submit">Read More</button>
-                  </div>
-              </div>
-  
-              <div class="left-box">
-                  <div class="box-img">
-                      <img src="./img/blog-4.jpg" alt="">
-                  </div>
-                  <div class="box-icons">
-                      <i class="fa-regular fa-clock"></i> May1, 2021
-                      <i class="fa-regular fa-bookmark"></i> Health
-                      <i class="fa-solid fa-capsules"></i> qrocery, quality
-                  </div>
-                  <div class="cont">
-                      <h1>On the other hand we provide denounce with righteous</h1>
-                      <p>Pellentesque feugiat, sem id interdum molestie, libero nibh imperdiet velit, sodales elementum enim sem sed lectus.
-                      Vivamus viverra diam congue tristique pellentesque. Proin efficitur est vel lectus ultrices rhoncus eu ut lacus. In
-                      gravida leo at justo lobortis, vitae aliquet justo vehicula. Maecenas at facilisis ex. Curabitur cursus, ex id efficitur
-                      ultrices, sapien mauris sodales</p>
-                  </div>
-                  <div class="box-button">
-                      <button type="submit">Read More</button>
-                  </div>
-              </div>
+        <div class="main-container-right">
+          <div class="search-box">
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
           </div>
-          <div class="main-container-right">
-              <div class="search-box">
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-              </form>
+
+          <div class="posts-box">
+            <span><b>POPULAR POSTS</b></span>
+            <div class="box-cont">
+              <div class="box-inp">
+                <img src="./img/blog-5-100x100.jpg" alt="">
+                <span>1</span>
+                <p>The Problem With Typefaces on the Web</p>
               </div>
-  
-              <div class="posts-box">
-                <span><b>POPULAR POSTS</b></span>
-                <div class="box-cont">
-                  <div class="box-inp">
-                    <img src="./img/blog-5-100x100.jpg" alt="">
-                    <span>1</span>
-                    <p>The Problem With Typefaces on the Web</p>
-                  </div>
-                  <div class="box-inp">
-                    <img src="./img/blog-3-100x100.jpg" alt="">
-                    <span>2</span>
-                    <p>But I must explain to you how all this mistaken idea</p>
-                  </div>
-                  <div class="box-inp">
-                    <img src="./img/blog-1-100x100.jpg" alt="">
-                    <span>3</span>
-                    <p>English Breakfast Tea With Tasty Donut Desserts</p>
-                  </div>
-                </div>
+              <div class="box-inp">
+                <img src="./img/blog-3-100x100.jpg" alt="">
+                <span>2</span>
+                <p>But I must explain to you how all this mistaken idea</p>
               </div>
-  
-              <div class="social-box">
-                <span><b>SOCIAL MEDIA</b></span>
-                <div class="media-box">
-                  <button type="button" class="btn btn-primary"><i class="fa-brands fa-facebook-f"></i>FACEBOOK</button>
-                  <button type="button" class="btn btn-info"><i class="fa-brands fa-twitter"></i>TWITTER</button>
-                  <button type="button" class="btn btn-danger"><i class="fa-brands fa-pinterest-p"></i>PINTEREST</button>
-                  <button type="button" class="btn btn-primary"><i class="fa-brands fa-linkedin-in"></i>LINKEDIN</button>
-                  <button type="button" class="btn btn-warning"><i class="fa-brands fa-reddit-alien"></i>REDDIT</button>
-                </div>
+              <div class="box-inp">
+                <img src="./img/blog-1-100x100.jpg" alt="">
+                <span>3</span>
+                <p>English Breakfast Tea With Tasty Donut Desserts</p>
               </div>
-  
-              <div class="banner-box">
-                <span><b>WIDGET BANNER</b></span>
-                <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/sidebar-banner.gif" alt="">
-              </div>
-  
-              <div class="tags-box">
-                <span><b>TAGS</b></span>
-                <div class="tags">
-                  <button type="button" class="btn btn-light">envato</button>
-                  <button type="button" class="btn btn-light">food</button>
-                  <button type="button" class="btn btn-light">fresh</button>
-                  <button type="button" class="btn btn-light">grocery</button>
-                  <button type="button" class="btn btn-light">organic</button>
-                  <button type="button" class="btn btn-light">quality</button>
-                  <button type="button" class="btn btn-light">store</button>
-                  <button type="button" class="btn btn-light">themeforest</button>
-                </div>
-              </div>
+            </div>
+          </div>
+
+          <div class="social-box">
+            <span><b>SOCIAL MEDIA</b></span>
+            <div class="media-box">
+              <button type="button" class="btn btn-primary"><i class="fa-brands fa-facebook-f"></i>FACEBOOK</button>
+              <button type="button" class="btn btn-info"><i class="fa-brands fa-twitter"></i>TWITTER</button>
+              <button type="button" class="btn btn-danger"><i class="fa-brands fa-pinterest-p"></i>PINTEREST</button>
+              <button type="button" class="btn btn-primary"><i class="fa-brands fa-linkedin-in"></i>LINKEDIN</button>
+              <button type="button" class="btn btn-warning"><i class="fa-brands fa-reddit-alien"></i>REDDIT</button>
+            </div>
+          </div>
+
+          <div class="banner-box">
+            <span><b>WIDGET BANNER</b></span>
+            <img src="https://klbtheme.com/bacola/wp-content/uploads/2021/05/sidebar-banner.gif" alt="">
+          </div>
+
+          <div class="tags-box">
+            <span><b>TAGS</b></span>
+            <div class="tags">
+              <button type="button" class="btn btn-light">envato</button>
+              <button type="button" class="btn btn-light">food</button>
+              <button type="button" class="btn btn-light">fresh</button>
+              <button type="button" class="btn btn-light">grocery</button>
+              <button type="button" class="btn btn-light">organic</button>
+              <button type="button" class="btn btn-light">quality</button>
+              <button type="button" class="btn btn-light">store</button>
+              <button type="button" class="btn btn-light">themeforest</button>
+            </div>
           </div>
         </div>
+      </div>
 
 
     </div>
 
-          
+
 
     <div class="footer-container">
       <div class="footer-first">
@@ -628,10 +652,10 @@
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="path/to/slick/slick.min.js"></script>
 <script src="./slick-1.8.1 (2)/slick-1.8.1/slick/slick.js"></script>
+<script src="./js/cardPage.js"></script>
+<script src="./js/homeCard.js"></script>
+
 <script src="./js/script.js"></script>
-<script src="./js/home.js"></script>
-<script src="./js/card.js"></script>
-<script src="./js/shop.js"></script>
 
 
 </html>

@@ -1,6 +1,4 @@
 
-
-
 // Basket
 
 let allButtons = document.querySelectorAll(".btn-primary");
